@@ -64,7 +64,6 @@
 
 - (void)dealloc
 {
-	NSLog(@"Clean");
 	for (dispatch_block_t block in _blocks)
 		block();
 }

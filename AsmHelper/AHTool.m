@@ -176,7 +176,6 @@ static uint8_t	hexa_value(uint8_t value);
 			close(fd);
 	}];
 
-
 	// Map the Mach-O file in memory
 	void *image = mmap(NULL, sb.st_size, PROT_READ, MAP_FILE | MAP_PRIVATE, fd, 0);
 	
