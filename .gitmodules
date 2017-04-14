@@ -1,0 +1,6 @@
+[submodule "Submodules/capstone"]
+	path = Submodules/capstone
+	url = https://github.com/aquynh/capstone.git
+[submodule "Submodules/keystone"]
+	path = Submodules/keystone
+	url = https://github.com/keystone-engine/keystone.git

@@ -19,9 +19,9 @@
 	<key>CFBundleSignature</key>
 	<string>SMas</string>
 	<key>CFBundleVersion</key>
-	<string>1.0.4</string>
+	<string>1.0.5</string>
 	<key>CFBundleGetInfoString</key>
-	<string>AsmHelper 1.0.4, © 2006-2014 SourceMac.com</string>
+	<string>AsmHelper 1.0.5, © 2006-2017 SourceMac.com</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D703196531C81FE512A432A1A752BC2471E57A28",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D703196531C81FE512A432A1A752BC2471E57A28" : 9223372036854775807,
+    "D1D0AAA339DC36369597ED6E1D5CD5E6C52DF5E5" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5C4DBF77-F701-4E0A-B682-D0A9BC753A5D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D703196531C81FE512A432A1A752BC2471E57A28" : "asmhelper\/",
+    "D1D0AAA339DC36369597ED6E1D5CD5E6C52DF5E5" : "asmhelper\/Submodules\/keystone\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "keystone",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Helpers\/keystone_xcode\/keystone.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/keystone-engine\/keystone.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D1D0AAA339DC36369597ED6E1D5CD5E6C52DF5E5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:javerous\/asmhelper.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D703196531C81FE512A432A1A752BC2471E57A28"
+    }
+  ]
+}

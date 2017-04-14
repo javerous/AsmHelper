@@ -1,0 +1,1104 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05EE7E5D2AE745F2B6171E45 /* regcomp.c in Sources */ = {isa = PBXBuildFile; fileRef = F39684690F4D4560AE551F60 /* regcomp.c */; settings = {COMPILER_FLAGS = ""; }; };
+		077E6F7CD55149BD8126DC4B /* LEB128.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F29A0C2DC5E4E84977EA49F /* LEB128.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		078B3D29781E4D1D98C368A1 /* MCExpr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9525BE68EC0E4F5486AD63B4 /* MCExpr.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		0B2C7DF7368A4F7C8FF83EDD /* ErrorHandling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57EBE65452604619B222ED6B /* ErrorHandling.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		0B7D64CD514E4999A6BFA060 /* PowerPCTargetInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B327CA5258DA4D0F98313925 /* PowerPCTargetInfo.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		0EF20B1B88B046FE8267BE44 /* X86TargetInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5182C6F8B4D346C4BE32C63C /* X86TargetInfo.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		104FC164D3DD48D79B60F3CB /* MipsABIInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8CCC1AF20C84014A94A4079 /* MipsABIInfo.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		13824FBFB1454CEDBFDFCA0A /* StringTableBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F44E5C4A714A4015BC449CEB /* StringTableBuilder.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		13D72D3145ED4C9EAEEC7576 /* HexagonMCAsmInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42A29AC0E370402695D4EA09 /* HexagonMCAsmInfo.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		1594623BEBD64C67949F8A41 /* ARMMCAsmInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F26F62301EF4AE4A5379392 /* ARMMCAsmInfo.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		19CCB43B0F374C36AECDA081 /* regerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 93C95E26B70749599DD7630C /* regerror.c */; settings = {COMPILER_FLAGS = ""; }; };
+		1C15D40A6E934E438DD7CDB6 /* AArch64TargetStreamer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C160F7AE7DE2465A91FFB760 /* AArch64TargetStreamer.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		1E6AD5B90B50459FA796CE1F /* regstrlcpy.c in Sources */ = {isa = PBXBuildFile; fileRef = 1B7E66B24F4A43B4BCFDCC23 /* regstrlcpy.c */; settings = {COMPILER_FLAGS = ""; }; };
+		1EC700E11153488DB7C5B20A /* SparcAsmParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0EC668F33D924EC981607118 /* SparcAsmParser.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		1ECE58FACBF74174BE53B871 /* AArch64ELFObjectWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B26328BF626A4D15A183B082 /* AArch64ELFObjectWriter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		21083FF4CA2146958FE2F521 /* MCAsmParserExtension.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7506E51B3EB94AC0AE889FE4 /* MCAsmParserExtension.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		23ECA48E170B489FADCF5AF7 /* MCAsmInfoELF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4A4DC6B29D9A4F60810024E4 /* MCAsmInfoELF.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2822E4BF6C7A4141BA7DDF37 /* MCObjectFileInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 254B327C03364357BBF8BD46 /* MCObjectFileInfo.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		28B8B354637948E3A253027C /* X86MCCodeEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0C65D6DAF6704EBE9FFDA140 /* X86MCCodeEmitter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2A81216265374171932BA106 /* AArch64TargetInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FBAADE1E0A15434BB6C693AC /* AArch64TargetInfo.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2BF83C0E445C49949736008F /* MCAsmLexer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7437401083E84A0389EE9D99 /* MCAsmLexer.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2CBB19BC722D40BA90DF7EA9 /* SparcMCExpr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 88C000C8D1FA404AA434F11A /* SparcMCExpr.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2D0BC6BE2E9745CC8B014F6A /* Hashing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE4894265D974252AFDB170B /* Hashing.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		301777E92C434B15A848D8D4 /* SourceMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73B19C4323EC43A6B44836DA /* SourceMgr.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		3207D7F80EBC487FA0B64F58 /* AArch64MCAsmInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FA38BF07CFD4A48B4ABAC46 /* AArch64MCAsmInfo.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		325E12D5477E43D692FD11B2 /* X86AsmBackend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDB00CFDFE034B1AA6D6D500 /* X86AsmBackend.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		32F33E3BF8FC455CA72A8901 /* APFloat.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 77C5D838532040C6A6D729B2 /* APFloat.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		33249FC6D89A4423B72CBADB /* Triple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3ECCC4744AB431887A79F7C /* Triple.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		33E9157C8DDB499B813BAAC4 /* HexagonMCChecker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 799DE394D1434202B8803D95 /* HexagonMCChecker.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		3AD91507598A4D8488A57486 /* SystemZAsmParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 920A614BD5044E5D9D269741 /* SystemZAsmParser.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		3B2A36BC3B8C49F3965368DA /* ARMBuildAttrs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15876BA0B5E34A5DA3C7C77D /* ARMBuildAttrs.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		3B3D54DC7E1946869AEB2788 /* HexagonMCShuffler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A580244083D54D239BA89CB8 /* HexagonMCShuffler.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		3CEDD5C709AA45D4A3DFD02E /* MCAsmInfoCOFF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E23FF3F3C07403A88622E90 /* MCAsmInfoCOFF.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		3D23A705ABD9427693702322 /* PPCMCCodeEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DBDEF7ACF2342A9B773E632 /* PPCMCCodeEmitter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		3EA25771D2D94AD08EA19A9B /* ARMMCCodeEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF720EA53FD648F0AE9B15BF /* ARMMCCodeEmitter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		404DB7FCF87B4D5AB55189AE /* AArch64AsmBackend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1ED3008CBCF47819FDFCDDA /* AArch64AsmBackend.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4307A7C92E044866B0236211 /* SparcTargetInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D343F33FB237439B9B699E09 /* SparcTargetInfo.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		43D26E02039F4119826D1597 /* ScaledNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D294BFF07B034D66A56715E0 /* ScaledNumber.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		44A9D1636CB94B3AB59154AB /* PPCPredicates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 855B9F9E4E2A4CD6A4944232 /* PPCPredicates.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		458EEF1CBE5245659FC7D025 /* AsmLexer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AEB2EDDB4F484521B7F80A52 /* AsmLexer.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		463784CA99484E1B986DF0F0 /* HexagonMCCompound.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B69D93800CCC46EAB67025F1 /* HexagonMCCompound.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		46EF97638338487B802917E9 /* MCFragment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89A13B167D714B90A1DAB77C /* MCFragment.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4A45FD44324A48BFAE08B0D0 /* MipsTargetInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 98546349701B4805B28B10A3 /* MipsTargetInfo.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4C6F23778D154D57AB215342 /* SmallVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2444C62DD23148FB8FC112B1 /* SmallVector.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4DA1553C397C4EF5A10C4AC2 /* MipsMCAsmInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51334595F67E4897BBD5B484 /* MipsMCAsmInfo.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4E3105762FAC42769530FF8B /* HexagonMCDuplexInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA5C33DFB90640728FA6B659 /* HexagonMCDuplexInfo.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4ED809D9458A417689302ECE /* MCRegisterInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A61F733CFA8B4A4DBAF740EA /* MCRegisterInfo.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4F33FAC5B3944858ADA1B963 /* StringPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F923BE607DC4A40BE3A5952 /* StringPool.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4FE30B59488E4E1C9C7575F9 /* MipsMCCodeEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E6C424A5B4B48F6922D3EE8 /* MipsMCCodeEmitter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		51126A873794483299302E73 /* SystemZMCCodeEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90B401799CA6458F8EEFFBC1 /* SystemZMCCodeEmitter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		512590BD980147EAA07FCDB9 /* PPCMCTargetDesc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 668E78B7BE0746F2927DF931 /* PPCMCTargetDesc.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		53955D93AE6A4A768BACE949 /* MCCodeEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19333D25783741C6BF689484 /* MCCodeEmitter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		54A97405C6964B6FA928A65C /* HexagonShuffler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B258BA0828A4D72AF22027E /* HexagonShuffler.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		556E8A750349462C8AD5BDED /* MCELFStreamer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 78C49E8CF12245D386C35462 /* MCELFStreamer.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		565E0F27300440DABEB95A2C /* PPCAsmParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8F7413BE22E84B0D8CE92947 /* PPCAsmParser.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5732A2471EA84F0CA3C8AF92 /* HexagonTargetInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BDE45FA6C8FA4943AD40D59B /* HexagonTargetInfo.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5B26B20C6AD44FEA915FD707 /* HexagonMCTargetDesc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8AF8BEE7901741C9B417C500 /* HexagonMCTargetDesc.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5BC7173BA68E424BA5734D15 /* MCELFObjectTargetWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE963E6A49D84C43B43D83A1 /* MCELFObjectTargetWriter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		611CB189838D4B3CA9FB751B /* ARMMCTargetDesc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 286A951701A448C096D53EB6 /* ARMMCTargetDesc.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		616B946E44A54614B2F73EA8 /* MCSection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 750644B758F54ADCB28AA61A /* MCSection.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		61C73875B7624818ADDBAE23 /* StringSaver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7734BCD032F94AD8AAF28528 /* StringSaver.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		643A9FED308C47AA9C4AE2E0 /* SystemZMCAsmBackend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5447BE81561D4E3AAF7A7BB0 /* SystemZMCAsmBackend.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6971D1733128438DA23E6187 /* Twine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7058EBB459AF439EABE5C6F6 /* Twine.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6975326BA995493A9773AFE6 /* ELFObjectWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50C759FB51CB4490A09ED8AC /* ELFObjectWriter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6A25B612C22E497CA16B09C6 /* StringMap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0A64878B7E3843469890ABA4 /* StringMap.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6B381C6AE5644201A05D23FC /* MCAsmBackend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA0721406CD84D0C8998BC19 /* MCAsmBackend.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6B45D76D4D4C4720A0C3147E /* MCAsmParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 284F19577E9D47BE8300149C /* MCAsmParser.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6B7B9E2EC6814C6EBC09CD29 /* SparcMCAsmInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52F0795DEB7B47229BFF076D /* SparcMCAsmInfo.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6E12DCF893D04FAC8C95E1BA /* MemoryBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F30CDBAEA98E4C028DB9FB7C /* MemoryBuffer.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		73479A1507FC4315AE5F9115 /* SystemZTargetInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1644B8364FF1424FB7E45458 /* SystemZTargetInfo.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		75FF2392178F4855B7381AD5 /* SparcAsmBackend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 90C1E12294D54DC4AC6C6FA3 /* SparcAsmBackend.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		776BB76E29CC4325A3EF8624 /* MipsAsmBackend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E484051F99C4A8E864706FE /* MipsAsmBackend.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		77D908F0CD344D8A88686ED2 /* MCInst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1103037E1F0C47EEB53FF56F /* MCInst.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		789281248BA0458BAC865CC2 /* TargetRegistry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C8108E5B3B234F3A8A72496B /* TargetRegistry.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7AAEA4F3F1D242369E4AD261 /* StringRef.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D7621908CE2048A2A30C2A24 /* StringRef.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7E31E7B104724FC8AF60781F /* SmallPtrSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 488084A7F0154A948FFD29EC /* SmallPtrSet.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		802234890E7A4D3A9CF7E778 /* MCAsmInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4D965362052437790D87D1C /* MCAsmInfo.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		8635A4A28EA84EB298B13520 /* Path.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E6E10020521947E4BB467A53 /* Path.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		86DDDF7AFCE545748FEA6250 /* PPCELFObjectWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 684403F593404EA9A36BAA7B /* PPCELFObjectWriter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		88D4CDF418C942EBB4E5A754 /* MCTargetOptions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 42911210C6E9423CA1486460 /* MCTargetOptions.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		8B91FC744B204EBB8AB07433 /* APSInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B8751B6C7DD243FFBBD1A431 /* APSInt.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		8D2845FB854C4C9FAF9E705A /* AArch64MCCodeEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4C516F7982E84F98A2007194 /* AArch64MCCodeEmitter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		8EDC8760102D4B7985328AB6 /* MCSubtargetInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 404829B024F24704942D55FB /* MCSubtargetInfo.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		8F0542738BC04FA6B49A12D2 /* HexagonELFObjectWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8FDF2AFEB5A04B89BCDB51EC /* HexagonELFObjectWriter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		922AA62C28764AF980FF0F1B /* SparcMCCodeEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 098738B190164F3A9F1D9770 /* SparcMCCodeEmitter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		9492BF9CA0074E488C9FB941 /* ARMAsmParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E49F65E8B3645A29D6C013B /* ARMAsmParser.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		956CAF5F3DAD4FC694A543C8 /* MipsAsmParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F1A513B8826401DA6C45F00 /* MipsAsmParser.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		98A43DA697D64F33A3F0C5D1 /* ARMMCExpr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 68C57E3494074DC780559036 /* ARMMCExpr.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		99C1772D3E484B8BAD16E676 /* ConstantPools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0FB2E392F03249ED814050CC /* ConstantPools.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		9ADCC255AFF246A4AFF7132B /* regexec.c in Sources */ = {isa = PBXBuildFile; fileRef = 50177182C3A542C3BB5B6D94 /* regexec.c */; settings = {COMPILER_FLAGS = ""; }; };
+		9C6C3444EA164139B2296C4B /* PPCMCAsmInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55934705EE3341D896FD9B6F /* PPCMCAsmInfo.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		9DAEBE90460F4F53A35BB34C /* raw_ostream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4C189E4F70AF42DC8F98AC29 /* raw_ostream.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		9EE06EAAF1FE49FD879A8CA4 /* MCAsmInfoDarwin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 55A887268AD549D09BEF7F19 /* MCAsmInfoDarwin.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A2FA83CDC76248D2A8437109 /* ARMTargetInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7B8AF01986E64A9DB6AF11ED /* ARMTargetInfo.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A3727FD564C940C797855E66 /* MCSymbol.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 38DC88B36330449B8A8DBDDD /* MCSymbol.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A4770572B87344AB9E18E692 /* ARMTargetStreamer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37684FD7763E4E40A382B1D0 /* ARMTargetStreamer.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A8CB332C7BA747BF8D3CA9A8 /* AsmParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D6676C34B1F34F908CC8D640 /* AsmParser.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		AA091EDBCA36439CB63E6BA0 /* SparcMCTargetDesc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1979CB8EF5429ABEF0A289 /* SparcMCTargetDesc.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		AA0ED412B0EC43C9B11EECDA /* AArch64BaseInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EFC4458958D84842945F1F1B /* AArch64BaseInfo.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		AA1C8F7852B841FDBC2275E5 /* PPCAsmBackend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF70BC416A06451BA3FCD2CD /* PPCAsmBackend.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		AA67D32720BE44EDA4E3ADE5 /* SparcELFObjectWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AE6FC261AD347FBB10E0CE4 /* SparcELFObjectWriter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		AC223E7BD0C94D26B6F31CA9 /* SubtargetFeature.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F953352AD50C4BD4890D7AAF /* SubtargetFeature.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		AE7098CF78A5411381486CD0 /* regfree.c in Sources */ = {isa = PBXBuildFile; fileRef = 6B29E22729B74494AAF6CB0D /* regfree.c */; settings = {COMPILER_FLAGS = ""; }; };
+		AFFD334D78AE4918A45E23F9 /* AArch64AsmParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 25F5A9E1D12748748AA430BF /* AArch64AsmParser.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B0D225F46C9243C9AC43E1C9 /* Regex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 93538F4E42B74300B9C87C7E /* Regex.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B38BAFE0198847ABAA6FEFD2 /* ELFAsmParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3874DC32F88647CAA514C053 /* ELFAsmParser.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B6857E94100C4973BB08D8AC /* Memory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 023A59A1A1494AD5BF5CF836 /* Memory.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B6E51D0F637B43E183A25117 /* DarwinAsmParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D762B82135CA4961B55E22FE /* DarwinAsmParser.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B82CCD4309C84B05A545DB56 /* SystemZMCObjectWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96C702B0E5AE48F4A0B00EEE /* SystemZMCObjectWriter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		BAE2AAB6A4CA48CBA773A5BE /* ARMELFObjectWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F75AD49581344ACE957AF7DC /* ARMELFObjectWriter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		BAEC3015952C498FA82102FA /* MCObjectWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 666A6C20A751449AA458080F /* MCObjectWriter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		BB8E2B71D6274EA6B4059F7A /* SystemZMCTargetDesc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53725C9522374680A67556EF /* SystemZMCTargetDesc.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		BFDBAA17631F4321893EB946 /* MipsMCTargetDesc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7A17EF77E4614DE3B918BF3E /* MipsMCTargetDesc.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		C809317CCC33406BB0FBE443 /* MCSectionMachO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6FBB65C78A14D4DA0FD9BD0 /* MCSectionMachO.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		CC76DA6059204374AC5A6B6E /* ks.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 162292B1BA364515A4979D4B /* ks.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		CE34684D2F2E45F3827B0736 /* SystemZMCAsmInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46AE0D865E7F4CCE95D3CEF2 /* SystemZMCAsmInfo.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		CF9C906DB878406D973A999E /* X86AsmParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD6B597E862A4402B0625B79 /* X86AsmParser.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D11E988A93BB4176B54880B7 /* X86AsmInstrumentation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8BAEA87CB4424245AD7884B2 /* X86AsmInstrumentation.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D1DFC4EB18744B028061C16D /* X86MCAsmInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE44691BA364216B62FEE2A /* X86MCAsmInfo.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D2509314B8014B07926076BE /* MCSectionELF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E31FA0EAAFD24FFE8C11B86B /* MCSectionELF.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D29AD9440E1D4EF59AF1AD19 /* PPCMCExpr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E56FCA4D234049B7A846E497 /* PPCMCExpr.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D5AD7BF3CE8948CF87160990 /* StringExtras.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 09EB649E15B842C5BBB0677A /* StringExtras.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D67070A9733147EA9501E251 /* IntEqClasses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5478368012344E4080AE250F /* IntEqClasses.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D94900CB4DD04AA985B254F2 /* HexagonAsmParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 46E408DB97034B908AC4FBE2 /* HexagonAsmParser.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		DBE53C1D56A84211BDAD9F52 /* MCAssembler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C33C315DEA15409EA67ACCC5 /* MCAssembler.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		DF42C37831FD40218FF2D28F /* AArch64MCExpr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 739A24A25FF345D3A87E1D12 /* AArch64MCExpr.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		DFB21B35614F4769BA29DD9A /* HexagonMCCodeEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE40CB9327194B408B5E4B1B /* HexagonMCCodeEmitter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E0F9B8084FA94477BBF6C215 /* MCContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7C2EDC00042840A5BEE08696 /* MCContext.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E271A087E9454E10857AB7A4 /* TargetParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0068B94BA4DB48C0809A8635 /* TargetParser.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E3973A3A7F934C8992F80380 /* HexagonMCInstrInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15220836322048C3862E9780 /* HexagonMCInstrInfo.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E5B17CA866E34D63AD72DDE6 /* MCTargetAsmParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3BEF48CD1AF4C629F40A14F /* MCTargetAsmParser.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E8DE456C5691487CABF91319 /* AArch64MCTargetDesc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F32F0BFEE5E94318B6577F65 /* AArch64MCTargetDesc.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E909ECA5AFAB4BDCAE164209 /* MCStreamer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B32B34C04327457E941219BA /* MCStreamer.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		EA9B15F4C4164F9083F2F9F6 /* X86MCTargetDesc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 517DF514A7CA4C228A9720D8 /* X86MCTargetDesc.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		EDE233597B334593BB9B818B /* MCValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0BA51CF6C043401BABD6F904 /* MCValue.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F055C9B2A4B343FC8437DC06 /* MCObjectStreamer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1BD0321658A34BFB8889E22A /* MCObjectStreamer.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F0AA5C254C3741BBA44B0851 /* MCLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3DA69007E0464289BB6DC5AF /* MCLabel.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F20F4A15533C438894D9D433 /* MCSectionCOFF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5024DE3D4B52415B82CEE871 /* MCSectionCOFF.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F262AC20AC8A4AACBF3360F3 /* X86ELFObjectWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D1EADBDE0E84EF1B584861A /* X86ELFObjectWriter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F577F6122AE7426FA4BDD686 /* HexagonMCExpr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0B1034FF0E2B4A52A96FA8EB /* HexagonMCExpr.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F6239D2459FB485AB4C1795F /* MCSymbolELF.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 045FDA75F76C40FF86A88E82 /* MCSymbolELF.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F6946D88402A4806A375D974 /* HexagonAsmBackend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D30A290C2E3440BF9C43B331 /* HexagonAsmBackend.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F6D94A181E8544C3A377A88B /* ARMAsmBackend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E33343FF0936445F99DF3AD3 /* ARMAsmBackend.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		FBBA54E40349438FB26FC954 /* MCInstrDesc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 53B30E65FE774AD0A0044ED7 /* MCInstrDesc.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		FCAF94866D204FCFBECE956F /* MipsELFObjectWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 328AC2BD476A4A98BD1D8F67 /* MipsELFObjectWriter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		FE4C7DE314784EA7847CD084 /* COFFAsmParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDFDADB223C8460C8BAD53D8 /* COFFAsmParser.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		FEC4B305E85D4576BB9FF67C /* APInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3F5CD955B1DE4206A2F4859F /* APInt.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		FF463F60D31E42FD834B4CAC /* MipsMCExpr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AAF904A78D3D40CB9D67FABF /* MipsMCExpr.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0068B94BA4DB48C0809A8635 /* TargetParser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TargetParser.cpp; path = llvm/lib/Support/TargetParser.cpp; sourceTree = "<group>"; };
+		023A59A1A1494AD5BF5CF836 /* Memory.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Memory.cpp; path = llvm/lib/Support/Memory.cpp; sourceTree = "<group>"; };
+		045FDA75F76C40FF86A88E82 /* MCSymbolELF.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCSymbolELF.cpp; path = llvm/lib/MC/MCSymbolELF.cpp; sourceTree = "<group>"; };
+		098738B190164F3A9F1D9770 /* SparcMCCodeEmitter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SparcMCCodeEmitter.cpp; path = llvm/lib/Target/Sparc/MCTargetDesc/SparcMCCodeEmitter.cpp; sourceTree = "<group>"; };
+		09EB649E15B842C5BBB0677A /* StringExtras.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = StringExtras.cpp; path = llvm/lib/Support/StringExtras.cpp; sourceTree = "<group>"; };
+		0A64878B7E3843469890ABA4 /* StringMap.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = StringMap.cpp; path = llvm/lib/Support/StringMap.cpp; sourceTree = "<group>"; };
+		0B1034FF0E2B4A52A96FA8EB /* HexagonMCExpr.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = HexagonMCExpr.cpp; path = llvm/lib/Target/Hexagon/MCTargetDesc/HexagonMCExpr.cpp; sourceTree = "<group>"; };
+		0B258BA0828A4D72AF22027E /* HexagonShuffler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = HexagonShuffler.cpp; path = llvm/lib/Target/Hexagon/MCTargetDesc/HexagonShuffler.cpp; sourceTree = "<group>"; };
+		0BA51CF6C043401BABD6F904 /* MCValue.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCValue.cpp; path = llvm/lib/MC/MCValue.cpp; sourceTree = "<group>"; };
+		0C65D6DAF6704EBE9FFDA140 /* X86MCCodeEmitter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = X86MCCodeEmitter.cpp; path = llvm/lib/Target/X86/MCTargetDesc/X86MCCodeEmitter.cpp; sourceTree = "<group>"; };
+		0EC668F33D924EC981607118 /* SparcAsmParser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SparcAsmParser.cpp; path = llvm/lib/Target/Sparc/AsmParser/SparcAsmParser.cpp; sourceTree = "<group>"; };
+		0F923BE607DC4A40BE3A5952 /* StringPool.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = StringPool.cpp; path = llvm/lib/Support/StringPool.cpp; sourceTree = "<group>"; };
+		0FB2E392F03249ED814050CC /* ConstantPools.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ConstantPools.cpp; path = llvm/lib/MC/ConstantPools.cpp; sourceTree = "<group>"; };
+		1103037E1F0C47EEB53FF56F /* MCInst.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCInst.cpp; path = llvm/lib/MC/MCInst.cpp; sourceTree = "<group>"; };
+		15220836322048C3862E9780 /* HexagonMCInstrInfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = HexagonMCInstrInfo.cpp; path = llvm/lib/Target/Hexagon/MCTargetDesc/HexagonMCInstrInfo.cpp; sourceTree = "<group>"; };
+		15876BA0B5E34A5DA3C7C77D /* ARMBuildAttrs.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ARMBuildAttrs.cpp; path = llvm/lib/Support/ARMBuildAttrs.cpp; sourceTree = "<group>"; };
+		162292B1BA364515A4979D4B /* ks.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ks.cpp; path = llvm/keystone/ks.cpp; sourceTree = "<group>"; };
+		1644B8364FF1424FB7E45458 /* SystemZTargetInfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SystemZTargetInfo.cpp; path = llvm/lib/Target/SystemZ/TargetInfo/SystemZTargetInfo.cpp; sourceTree = "<group>"; };
+		19333D25783741C6BF689484 /* MCCodeEmitter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCCodeEmitter.cpp; path = llvm/lib/MC/MCCodeEmitter.cpp; sourceTree = "<group>"; };
+		1B7E66B24F4A43B4BCFDCC23 /* regstrlcpy.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = regstrlcpy.c; path = llvm/lib/Support/regstrlcpy.c; sourceTree = "<group>"; };
+		1BD0321658A34BFB8889E22A /* MCObjectStreamer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCObjectStreamer.cpp; path = llvm/lib/MC/MCObjectStreamer.cpp; sourceTree = "<group>"; };
+		2444C62DD23148FB8FC112B1 /* SmallVector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SmallVector.cpp; path = llvm/lib/Support/SmallVector.cpp; sourceTree = "<group>"; };
+		254B327C03364357BBF8BD46 /* MCObjectFileInfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCObjectFileInfo.cpp; path = llvm/lib/MC/MCObjectFileInfo.cpp; sourceTree = "<group>"; };
+		25F5A9E1D12748748AA430BF /* AArch64AsmParser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AArch64AsmParser.cpp; path = llvm/lib/Target/AArch64/AsmParser/AArch64AsmParser.cpp; sourceTree = "<group>"; };
+		284F19577E9D47BE8300149C /* MCAsmParser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCAsmParser.cpp; path = llvm/lib/MC/MCParser/MCAsmParser.cpp; sourceTree = "<group>"; };
+		286A951701A448C096D53EB6 /* ARMMCTargetDesc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ARMMCTargetDesc.cpp; path = llvm/lib/Target/ARM/MCTargetDesc/ARMMCTargetDesc.cpp; sourceTree = "<group>"; };
+		2FE44691BA364216B62FEE2A /* X86MCAsmInfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = X86MCAsmInfo.cpp; path = llvm/lib/Target/X86/MCTargetDesc/X86MCAsmInfo.cpp; sourceTree = "<group>"; };
+		328AC2BD476A4A98BD1D8F67 /* MipsELFObjectWriter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MipsELFObjectWriter.cpp; path = llvm/lib/Target/Mips/MCTargetDesc/MipsELFObjectWriter.cpp; sourceTree = "<group>"; };
+		37684FD7763E4E40A382B1D0 /* ARMTargetStreamer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ARMTargetStreamer.cpp; path = llvm/lib/Target/ARM/MCTargetDesc/ARMTargetStreamer.cpp; sourceTree = "<group>"; };
+		3874DC32F88647CAA514C053 /* ELFAsmParser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ELFAsmParser.cpp; path = llvm/lib/MC/MCParser/ELFAsmParser.cpp; sourceTree = "<group>"; };
+		38DC88B36330449B8A8DBDDD /* MCSymbol.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCSymbol.cpp; path = llvm/lib/MC/MCSymbol.cpp; sourceTree = "<group>"; };
+		3AE6FC261AD347FBB10E0CE4 /* SparcELFObjectWriter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SparcELFObjectWriter.cpp; path = llvm/lib/Target/Sparc/MCTargetDesc/SparcELFObjectWriter.cpp; sourceTree = "<group>"; };
+		3DA69007E0464289BB6DC5AF /* MCLabel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCLabel.cpp; path = llvm/lib/MC/MCLabel.cpp; sourceTree = "<group>"; };
+		3E23FF3F3C07403A88622E90 /* MCAsmInfoCOFF.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCAsmInfoCOFF.cpp; path = llvm/lib/MC/MCAsmInfoCOFF.cpp; sourceTree = "<group>"; };
+		3E484051F99C4A8E864706FE /* MipsAsmBackend.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MipsAsmBackend.cpp; path = llvm/lib/Target/Mips/MCTargetDesc/MipsAsmBackend.cpp; sourceTree = "<group>"; };
+		3F5CD955B1DE4206A2F4859F /* APInt.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = APInt.cpp; path = llvm/lib/Support/APInt.cpp; sourceTree = "<group>"; };
+		404829B024F24704942D55FB /* MCSubtargetInfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCSubtargetInfo.cpp; path = llvm/lib/MC/MCSubtargetInfo.cpp; sourceTree = "<group>"; };
+		42911210C6E9423CA1486460 /* MCTargetOptions.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCTargetOptions.cpp; path = llvm/lib/MC/MCTargetOptions.cpp; sourceTree = "<group>"; };
+		42A29AC0E370402695D4EA09 /* HexagonMCAsmInfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = HexagonMCAsmInfo.cpp; path = llvm/lib/Target/Hexagon/MCTargetDesc/HexagonMCAsmInfo.cpp; sourceTree = "<group>"; };
+		46AE0D865E7F4CCE95D3CEF2 /* SystemZMCAsmInfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SystemZMCAsmInfo.cpp; path = llvm/lib/Target/SystemZ/MCTargetDesc/SystemZMCAsmInfo.cpp; sourceTree = "<group>"; };
+		46E408DB97034B908AC4FBE2 /* HexagonAsmParser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = HexagonAsmParser.cpp; path = llvm/lib/Target/Hexagon/AsmParser/HexagonAsmParser.cpp; sourceTree = "<group>"; };
+		488084A7F0154A948FFD29EC /* SmallPtrSet.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SmallPtrSet.cpp; path = llvm/lib/Support/SmallPtrSet.cpp; sourceTree = "<group>"; };
+		4A4DC6B29D9A4F60810024E4 /* MCAsmInfoELF.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCAsmInfoELF.cpp; path = llvm/lib/MC/MCAsmInfoELF.cpp; sourceTree = "<group>"; };
+		4C189E4F70AF42DC8F98AC29 /* raw_ostream.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = raw_ostream.cpp; path = llvm/lib/Support/raw_ostream.cpp; sourceTree = "<group>"; };
+		4C516F7982E84F98A2007194 /* AArch64MCCodeEmitter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AArch64MCCodeEmitter.cpp; path = llvm/lib/Target/AArch64/MCTargetDesc/AArch64MCCodeEmitter.cpp; sourceTree = "<group>"; };
+		50177182C3A542C3BB5B6D94 /* regexec.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = regexec.c; path = llvm/lib/Support/regexec.c; sourceTree = "<group>"; };
+		5024DE3D4B52415B82CEE871 /* MCSectionCOFF.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCSectionCOFF.cpp; path = llvm/lib/MC/MCSectionCOFF.cpp; sourceTree = "<group>"; };
+		50C759FB51CB4490A09ED8AC /* ELFObjectWriter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ELFObjectWriter.cpp; path = llvm/lib/MC/ELFObjectWriter.cpp; sourceTree = "<group>"; };
+		51334595F67E4897BBD5B484 /* MipsMCAsmInfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MipsMCAsmInfo.cpp; path = llvm/lib/Target/Mips/MCTargetDesc/MipsMCAsmInfo.cpp; sourceTree = "<group>"; };
+		517DF514A7CA4C228A9720D8 /* X86MCTargetDesc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = X86MCTargetDesc.cpp; path = llvm/lib/Target/X86/MCTargetDesc/X86MCTargetDesc.cpp; sourceTree = "<group>"; };
+		5182C6F8B4D346C4BE32C63C /* X86TargetInfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = X86TargetInfo.cpp; path = llvm/lib/Target/X86/TargetInfo/X86TargetInfo.cpp; sourceTree = "<group>"; };
+		52F0795DEB7B47229BFF076D /* SparcMCAsmInfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SparcMCAsmInfo.cpp; path = llvm/lib/Target/Sparc/MCTargetDesc/SparcMCAsmInfo.cpp; sourceTree = "<group>"; };
+		53725C9522374680A67556EF /* SystemZMCTargetDesc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SystemZMCTargetDesc.cpp; path = llvm/lib/Target/SystemZ/MCTargetDesc/SystemZMCTargetDesc.cpp; sourceTree = "<group>"; };
+		53B30E65FE774AD0A0044ED7 /* MCInstrDesc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCInstrDesc.cpp; path = llvm/lib/MC/MCInstrDesc.cpp; sourceTree = "<group>"; };
+		5447BE81561D4E3AAF7A7BB0 /* SystemZMCAsmBackend.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SystemZMCAsmBackend.cpp; path = llvm/lib/Target/SystemZ/MCTargetDesc/SystemZMCAsmBackend.cpp; sourceTree = "<group>"; };
+		5478368012344E4080AE250F /* IntEqClasses.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = IntEqClasses.cpp; path = llvm/lib/Support/IntEqClasses.cpp; sourceTree = "<group>"; };
+		55934705EE3341D896FD9B6F /* PPCMCAsmInfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PPCMCAsmInfo.cpp; path = llvm/lib/Target/PowerPC/MCTargetDesc/PPCMCAsmInfo.cpp; sourceTree = "<group>"; };
+		55A887268AD549D09BEF7F19 /* MCAsmInfoDarwin.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCAsmInfoDarwin.cpp; path = llvm/lib/MC/MCAsmInfoDarwin.cpp; sourceTree = "<group>"; };
+		57EBE65452604619B222ED6B /* ErrorHandling.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ErrorHandling.cpp; path = llvm/lib/Support/ErrorHandling.cpp; sourceTree = "<group>"; };
+		5E6C424A5B4B48F6922D3EE8 /* MipsMCCodeEmitter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MipsMCCodeEmitter.cpp; path = llvm/lib/Target/Mips/MCTargetDesc/MipsMCCodeEmitter.cpp; sourceTree = "<group>"; };
+		5F1A513B8826401DA6C45F00 /* MipsAsmParser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MipsAsmParser.cpp; path = llvm/lib/Target/Mips/AsmParser/MipsAsmParser.cpp; sourceTree = "<group>"; };
+		5F26F62301EF4AE4A5379392 /* ARMMCAsmInfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ARMMCAsmInfo.cpp; path = llvm/lib/Target/ARM/MCTargetDesc/ARMMCAsmInfo.cpp; sourceTree = "<group>"; };
+		666A6C20A751449AA458080F /* MCObjectWriter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCObjectWriter.cpp; path = llvm/lib/MC/MCObjectWriter.cpp; sourceTree = "<group>"; };
+		668E78B7BE0746F2927DF931 /* PPCMCTargetDesc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PPCMCTargetDesc.cpp; path = llvm/lib/Target/PowerPC/MCTargetDesc/PPCMCTargetDesc.cpp; sourceTree = "<group>"; };
+		684403F593404EA9A36BAA7B /* PPCELFObjectWriter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PPCELFObjectWriter.cpp; path = llvm/lib/Target/PowerPC/MCTargetDesc/PPCELFObjectWriter.cpp; sourceTree = "<group>"; };
+		68C57E3494074DC780559036 /* ARMMCExpr.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ARMMCExpr.cpp; path = llvm/lib/Target/ARM/MCTargetDesc/ARMMCExpr.cpp; sourceTree = "<group>"; };
+		6B29E22729B74494AAF6CB0D /* regfree.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = regfree.c; path = llvm/lib/Support/regfree.c; sourceTree = "<group>"; };
+		7058EBB459AF439EABE5C6F6 /* Twine.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Twine.cpp; path = llvm/lib/Support/Twine.cpp; sourceTree = "<group>"; };
+		739A24A25FF345D3A87E1D12 /* AArch64MCExpr.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AArch64MCExpr.cpp; path = llvm/lib/Target/AArch64/MCTargetDesc/AArch64MCExpr.cpp; sourceTree = "<group>"; };
+		73B19C4323EC43A6B44836DA /* SourceMgr.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SourceMgr.cpp; path = llvm/lib/Support/SourceMgr.cpp; sourceTree = "<group>"; };
+		7437401083E84A0389EE9D99 /* MCAsmLexer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCAsmLexer.cpp; path = llvm/lib/MC/MCParser/MCAsmLexer.cpp; sourceTree = "<group>"; };
+		750644B758F54ADCB28AA61A /* MCSection.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCSection.cpp; path = llvm/lib/MC/MCSection.cpp; sourceTree = "<group>"; };
+		7506E51B3EB94AC0AE889FE4 /* MCAsmParserExtension.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCAsmParserExtension.cpp; path = llvm/lib/MC/MCParser/MCAsmParserExtension.cpp; sourceTree = "<group>"; };
+		7734BCD032F94AD8AAF28528 /* StringSaver.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = StringSaver.cpp; path = llvm/lib/Support/StringSaver.cpp; sourceTree = "<group>"; };
+		77C5D838532040C6A6D729B2 /* APFloat.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = APFloat.cpp; path = llvm/lib/Support/APFloat.cpp; sourceTree = "<group>"; };
+		78C49E8CF12245D386C35462 /* MCELFStreamer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCELFStreamer.cpp; path = llvm/lib/MC/MCELFStreamer.cpp; sourceTree = "<group>"; };
+		799DE394D1434202B8803D95 /* HexagonMCChecker.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = HexagonMCChecker.cpp; path = llvm/lib/Target/Hexagon/MCTargetDesc/HexagonMCChecker.cpp; sourceTree = "<group>"; };
+		7A17EF77E4614DE3B918BF3E /* MipsMCTargetDesc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MipsMCTargetDesc.cpp; path = llvm/lib/Target/Mips/MCTargetDesc/MipsMCTargetDesc.cpp; sourceTree = "<group>"; };
+		7B8AF01986E64A9DB6AF11ED /* ARMTargetInfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ARMTargetInfo.cpp; path = llvm/lib/Target/ARM/TargetInfo/ARMTargetInfo.cpp; sourceTree = "<group>"; };
+		7C2EDC00042840A5BEE08696 /* MCContext.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCContext.cpp; path = llvm/lib/MC/MCContext.cpp; sourceTree = "<group>"; };
+		855B9F9E4E2A4CD6A4944232 /* PPCPredicates.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PPCPredicates.cpp; path = llvm/lib/Target/PowerPC/MCTargetDesc/PPCPredicates.cpp; sourceTree = "<group>"; };
+		88C000C8D1FA404AA434F11A /* SparcMCExpr.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SparcMCExpr.cpp; path = llvm/lib/Target/Sparc/MCTargetDesc/SparcMCExpr.cpp; sourceTree = "<group>"; };
+		89A13B167D714B90A1DAB77C /* MCFragment.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCFragment.cpp; path = llvm/lib/MC/MCFragment.cpp; sourceTree = "<group>"; };
+		8AF8BEE7901741C9B417C500 /* HexagonMCTargetDesc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = HexagonMCTargetDesc.cpp; path = llvm/lib/Target/Hexagon/MCTargetDesc/HexagonMCTargetDesc.cpp; sourceTree = "<group>"; };
+		8BAEA87CB4424245AD7884B2 /* X86AsmInstrumentation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = X86AsmInstrumentation.cpp; path = llvm/lib/Target/X86/AsmParser/X86AsmInstrumentation.cpp; sourceTree = "<group>"; };
+		8D1EADBDE0E84EF1B584861A /* X86ELFObjectWriter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = X86ELFObjectWriter.cpp; path = llvm/lib/Target/X86/MCTargetDesc/X86ELFObjectWriter.cpp; sourceTree = "<group>"; };
+		8E1979CB8EF5429ABEF0A289 /* SparcMCTargetDesc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SparcMCTargetDesc.cpp; path = llvm/lib/Target/Sparc/MCTargetDesc/SparcMCTargetDesc.cpp; sourceTree = "<group>"; };
+		8E49F65E8B3645A29D6C013B /* ARMAsmParser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ARMAsmParser.cpp; path = llvm/lib/Target/ARM/AsmParser/ARMAsmParser.cpp; sourceTree = "<group>"; };
+		8F7413BE22E84B0D8CE92947 /* PPCAsmParser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PPCAsmParser.cpp; path = llvm/lib/Target/PowerPC/AsmParser/PPCAsmParser.cpp; sourceTree = "<group>"; };
+		8FA38BF07CFD4A48B4ABAC46 /* AArch64MCAsmInfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AArch64MCAsmInfo.cpp; path = llvm/lib/Target/AArch64/MCTargetDesc/AArch64MCAsmInfo.cpp; sourceTree = "<group>"; };
+		8FDF2AFEB5A04B89BCDB51EC /* HexagonELFObjectWriter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = HexagonELFObjectWriter.cpp; path = llvm/lib/Target/Hexagon/MCTargetDesc/HexagonELFObjectWriter.cpp; sourceTree = "<group>"; };
+		90B401799CA6458F8EEFFBC1 /* SystemZMCCodeEmitter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SystemZMCCodeEmitter.cpp; path = llvm/lib/Target/SystemZ/MCTargetDesc/SystemZMCCodeEmitter.cpp; sourceTree = "<group>"; };
+		90C1E12294D54DC4AC6C6FA3 /* SparcAsmBackend.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SparcAsmBackend.cpp; path = llvm/lib/Target/Sparc/MCTargetDesc/SparcAsmBackend.cpp; sourceTree = "<group>"; };
+		920A614BD5044E5D9D269741 /* SystemZAsmParser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SystemZAsmParser.cpp; path = llvm/lib/Target/SystemZ/AsmParser/SystemZAsmParser.cpp; sourceTree = "<group>"; };
+		93538F4E42B74300B9C87C7E /* Regex.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Regex.cpp; path = llvm/lib/Support/Regex.cpp; sourceTree = "<group>"; };
+		93C95E26B70749599DD7630C /* regerror.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = regerror.c; path = llvm/lib/Support/regerror.c; sourceTree = "<group>"; };
+		9525BE68EC0E4F5486AD63B4 /* MCExpr.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCExpr.cpp; path = llvm/lib/MC/MCExpr.cpp; sourceTree = "<group>"; };
+		96C702B0E5AE48F4A0B00EEE /* SystemZMCObjectWriter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SystemZMCObjectWriter.cpp; path = llvm/lib/Target/SystemZ/MCTargetDesc/SystemZMCObjectWriter.cpp; sourceTree = "<group>"; };
+		98546349701B4805B28B10A3 /* MipsTargetInfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MipsTargetInfo.cpp; path = llvm/lib/Target/Mips/TargetInfo/MipsTargetInfo.cpp; sourceTree = "<group>"; };
+		9DBDEF7ACF2342A9B773E632 /* PPCMCCodeEmitter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PPCMCCodeEmitter.cpp; path = llvm/lib/Target/PowerPC/MCTargetDesc/PPCMCCodeEmitter.cpp; sourceTree = "<group>"; };
+		9F29A0C2DC5E4E84977EA49F /* LEB128.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = LEB128.cpp; path = llvm/lib/Support/LEB128.cpp; sourceTree = "<group>"; };
+		A1ED3008CBCF47819FDFCDDA /* AArch64AsmBackend.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AArch64AsmBackend.cpp; path = llvm/lib/Target/AArch64/MCTargetDesc/AArch64AsmBackend.cpp; sourceTree = "<group>"; };
+		A580244083D54D239BA89CB8 /* HexagonMCShuffler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = HexagonMCShuffler.cpp; path = llvm/lib/Target/Hexagon/MCTargetDesc/HexagonMCShuffler.cpp; sourceTree = "<group>"; };
+		A61F733CFA8B4A4DBAF740EA /* MCRegisterInfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCRegisterInfo.cpp; path = llvm/lib/MC/MCRegisterInfo.cpp; sourceTree = "<group>"; };
+		AAF904A78D3D40CB9D67FABF /* MipsMCExpr.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MipsMCExpr.cpp; path = llvm/lib/Target/Mips/MCTargetDesc/MipsMCExpr.cpp; sourceTree = "<group>"; };
+		AEB2EDDB4F484521B7F80A52 /* AsmLexer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AsmLexer.cpp; path = llvm/lib/MC/MCParser/AsmLexer.cpp; sourceTree = "<group>"; };
+		B23D03A8C8BF4BFA86834DEB /* libkeystone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libkeystone.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26328BF626A4D15A183B082 /* AArch64ELFObjectWriter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AArch64ELFObjectWriter.cpp; path = llvm/lib/Target/AArch64/MCTargetDesc/AArch64ELFObjectWriter.cpp; sourceTree = "<group>"; };
+		B327CA5258DA4D0F98313925 /* PowerPCTargetInfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PowerPCTargetInfo.cpp; path = llvm/lib/Target/PowerPC/TargetInfo/PowerPCTargetInfo.cpp; sourceTree = "<group>"; };
+		B32B34C04327457E941219BA /* MCStreamer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCStreamer.cpp; path = llvm/lib/MC/MCStreamer.cpp; sourceTree = "<group>"; };
+		B69D93800CCC46EAB67025F1 /* HexagonMCCompound.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = HexagonMCCompound.cpp; path = llvm/lib/Target/Hexagon/MCTargetDesc/HexagonMCCompound.cpp; sourceTree = "<group>"; };
+		B8751B6C7DD243FFBBD1A431 /* APSInt.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = APSInt.cpp; path = llvm/lib/Support/APSInt.cpp; sourceTree = "<group>"; };
+		BDE45FA6C8FA4943AD40D59B /* HexagonTargetInfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = HexagonTargetInfo.cpp; path = llvm/lib/Target/Hexagon/TargetInfo/HexagonTargetInfo.cpp; sourceTree = "<group>"; };
+		BF720EA53FD648F0AE9B15BF /* ARMMCCodeEmitter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ARMMCCodeEmitter.cpp; path = llvm/lib/Target/ARM/MCTargetDesc/ARMMCCodeEmitter.cpp; sourceTree = "<group>"; };
+		C160F7AE7DE2465A91FFB760 /* AArch64TargetStreamer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AArch64TargetStreamer.cpp; path = llvm/lib/Target/AArch64/MCTargetDesc/AArch64TargetStreamer.cpp; sourceTree = "<group>"; };
+		C33C315DEA15409EA67ACCC5 /* MCAssembler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCAssembler.cpp; path = llvm/lib/MC/MCAssembler.cpp; sourceTree = "<group>"; };
+		C6FBB65C78A14D4DA0FD9BD0 /* MCSectionMachO.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCSectionMachO.cpp; path = llvm/lib/MC/MCSectionMachO.cpp; sourceTree = "<group>"; };
+		C8108E5B3B234F3A8A72496B /* TargetRegistry.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TargetRegistry.cpp; path = llvm/lib/Support/TargetRegistry.cpp; sourceTree = "<group>"; };
+		CA0721406CD84D0C8998BC19 /* MCAsmBackend.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCAsmBackend.cpp; path = llvm/lib/MC/MCAsmBackend.cpp; sourceTree = "<group>"; };
+		CA5C33DFB90640728FA6B659 /* HexagonMCDuplexInfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = HexagonMCDuplexInfo.cpp; path = llvm/lib/Target/Hexagon/MCTargetDesc/HexagonMCDuplexInfo.cpp; sourceTree = "<group>"; };
+		CF70BC416A06451BA3FCD2CD /* PPCAsmBackend.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PPCAsmBackend.cpp; path = llvm/lib/Target/PowerPC/MCTargetDesc/PPCAsmBackend.cpp; sourceTree = "<group>"; };
+		D294BFF07B034D66A56715E0 /* ScaledNumber.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ScaledNumber.cpp; path = llvm/lib/Support/ScaledNumber.cpp; sourceTree = "<group>"; };
+		D30A290C2E3440BF9C43B331 /* HexagonAsmBackend.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = HexagonAsmBackend.cpp; path = llvm/lib/Target/Hexagon/MCTargetDesc/HexagonAsmBackend.cpp; sourceTree = "<group>"; };
+		D343F33FB237439B9B699E09 /* SparcTargetInfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SparcTargetInfo.cpp; path = llvm/lib/Target/Sparc/TargetInfo/SparcTargetInfo.cpp; sourceTree = "<group>"; };
+		D6676C34B1F34F908CC8D640 /* AsmParser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AsmParser.cpp; path = llvm/lib/MC/MCParser/AsmParser.cpp; sourceTree = "<group>"; };
+		D7621908CE2048A2A30C2A24 /* StringRef.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = StringRef.cpp; path = llvm/lib/Support/StringRef.cpp; sourceTree = "<group>"; };
+		D762B82135CA4961B55E22FE /* DarwinAsmParser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DarwinAsmParser.cpp; path = llvm/lib/MC/MCParser/DarwinAsmParser.cpp; sourceTree = "<group>"; };
+		D8CCC1AF20C84014A94A4079 /* MipsABIInfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MipsABIInfo.cpp; path = llvm/lib/Target/Mips/MCTargetDesc/MipsABIInfo.cpp; sourceTree = "<group>"; };
+		DE40CB9327194B408B5E4B1B /* HexagonMCCodeEmitter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = HexagonMCCodeEmitter.cpp; path = llvm/lib/Target/Hexagon/MCTargetDesc/HexagonMCCodeEmitter.cpp; sourceTree = "<group>"; };
+		E31FA0EAAFD24FFE8C11B86B /* MCSectionELF.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCSectionELF.cpp; path = llvm/lib/MC/MCSectionELF.cpp; sourceTree = "<group>"; };
+		E33343FF0936445F99DF3AD3 /* ARMAsmBackend.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ARMAsmBackend.cpp; path = llvm/lib/Target/ARM/MCTargetDesc/ARMAsmBackend.cpp; sourceTree = "<group>"; };
+		E56FCA4D234049B7A846E497 /* PPCMCExpr.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PPCMCExpr.cpp; path = llvm/lib/Target/PowerPC/MCTargetDesc/PPCMCExpr.cpp; sourceTree = "<group>"; };
+		E6E10020521947E4BB467A53 /* Path.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Path.cpp; path = llvm/lib/Support/Path.cpp; sourceTree = "<group>"; };
+		EE963E6A49D84C43B43D83A1 /* MCELFObjectTargetWriter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCELFObjectTargetWriter.cpp; path = llvm/lib/MC/MCELFObjectTargetWriter.cpp; sourceTree = "<group>"; };
+		EFC4458958D84842945F1F1B /* AArch64BaseInfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AArch64BaseInfo.cpp; path = llvm/lib/Target/AArch64/Utils/AArch64BaseInfo.cpp; sourceTree = "<group>"; };
+		F30CDBAEA98E4C028DB9FB7C /* MemoryBuffer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MemoryBuffer.cpp; path = llvm/lib/Support/MemoryBuffer.cpp; sourceTree = "<group>"; };
+		F32F0BFEE5E94318B6577F65 /* AArch64MCTargetDesc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AArch64MCTargetDesc.cpp; path = llvm/lib/Target/AArch64/MCTargetDesc/AArch64MCTargetDesc.cpp; sourceTree = "<group>"; };
+		F39684690F4D4560AE551F60 /* regcomp.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = regcomp.c; path = llvm/lib/Support/regcomp.c; sourceTree = "<group>"; };
+		F3BEF48CD1AF4C629F40A14F /* MCTargetAsmParser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCTargetAsmParser.cpp; path = llvm/lib/MC/MCParser/MCTargetAsmParser.cpp; sourceTree = "<group>"; };
+		F3ECCC4744AB431887A79F7C /* Triple.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Triple.cpp; path = llvm/lib/Support/Triple.cpp; sourceTree = "<group>"; };
+		F44E5C4A714A4015BC449CEB /* StringTableBuilder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = StringTableBuilder.cpp; path = llvm/lib/MC/StringTableBuilder.cpp; sourceTree = "<group>"; };
+		F4D965362052437790D87D1C /* MCAsmInfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MCAsmInfo.cpp; path = llvm/lib/MC/MCAsmInfo.cpp; sourceTree = "<group>"; };
+		F75AD49581344ACE957AF7DC /* ARMELFObjectWriter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ARMELFObjectWriter.cpp; path = llvm/lib/Target/ARM/MCTargetDesc/ARMELFObjectWriter.cpp; sourceTree = "<group>"; };
+		F953352AD50C4BD4890D7AAF /* SubtargetFeature.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SubtargetFeature.cpp; path = llvm/lib/MC/SubtargetFeature.cpp; sourceTree = "<group>"; };
+		FBAADE1E0A15434BB6C693AC /* AArch64TargetInfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AArch64TargetInfo.cpp; path = llvm/lib/Target/AArch64/TargetInfo/AArch64TargetInfo.cpp; sourceTree = "<group>"; };
+		FD6B597E862A4402B0625B79 /* X86AsmParser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = X86AsmParser.cpp; path = llvm/lib/Target/X86/AsmParser/X86AsmParser.cpp; sourceTree = "<group>"; };
+		FDB00CFDFE034B1AA6D6D500 /* X86AsmBackend.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = X86AsmBackend.cpp; path = llvm/lib/Target/X86/MCTargetDesc/X86AsmBackend.cpp; sourceTree = "<group>"; };
+		FDFDADB223C8460C8BAD53D8 /* COFFAsmParser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = COFFAsmParser.cpp; path = llvm/lib/MC/MCParser/COFFAsmParser.cpp; sourceTree = "<group>"; };
+		FE4894265D974252AFDB170B /* Hashing.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Hashing.cpp; path = llvm/lib/Support/Hashing.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1B894AD0AF4E4010B06E86E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B23D03A8C8BF4BFA86834DEB /* libkeystone.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		650253EB05A5432DB09F8DF4 = {
+			isa = PBXGroup;
+			children = (
+				DDBD8330D0574B058B6BF88E /* Sources */,
+				D70CE3B17F2E480487F153BF /* Resources */,
+				1B894AD0AF4E4010B06E86E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		745C56E483F94E9B8A654F74 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				162292B1BA364515A4979D4B /* ks.cpp */,
+				0FB2E392F03249ED814050CC /* ConstantPools.cpp */,
+				50C759FB51CB4490A09ED8AC /* ELFObjectWriter.cpp */,
+				CA0721406CD84D0C8998BC19 /* MCAsmBackend.cpp */,
+				F4D965362052437790D87D1C /* MCAsmInfo.cpp */,
+				3E23FF3F3C07403A88622E90 /* MCAsmInfoCOFF.cpp */,
+				55A887268AD549D09BEF7F19 /* MCAsmInfoDarwin.cpp */,
+				4A4DC6B29D9A4F60810024E4 /* MCAsmInfoELF.cpp */,
+				C33C315DEA15409EA67ACCC5 /* MCAssembler.cpp */,
+				19333D25783741C6BF689484 /* MCCodeEmitter.cpp */,
+				7C2EDC00042840A5BEE08696 /* MCContext.cpp */,
+				EE963E6A49D84C43B43D83A1 /* MCELFObjectTargetWriter.cpp */,
+				78C49E8CF12245D386C35462 /* MCELFStreamer.cpp */,
+				9525BE68EC0E4F5486AD63B4 /* MCExpr.cpp */,
+				89A13B167D714B90A1DAB77C /* MCFragment.cpp */,
+				1103037E1F0C47EEB53FF56F /* MCInst.cpp */,
+				53B30E65FE774AD0A0044ED7 /* MCInstrDesc.cpp */,
+				3DA69007E0464289BB6DC5AF /* MCLabel.cpp */,
+				254B327C03364357BBF8BD46 /* MCObjectFileInfo.cpp */,
+				1BD0321658A34BFB8889E22A /* MCObjectStreamer.cpp */,
+				666A6C20A751449AA458080F /* MCObjectWriter.cpp */,
+				AEB2EDDB4F484521B7F80A52 /* AsmLexer.cpp */,
+				D6676C34B1F34F908CC8D640 /* AsmParser.cpp */,
+				FDFDADB223C8460C8BAD53D8 /* COFFAsmParser.cpp */,
+				D762B82135CA4961B55E22FE /* DarwinAsmParser.cpp */,
+				3874DC32F88647CAA514C053 /* ELFAsmParser.cpp */,
+				7437401083E84A0389EE9D99 /* MCAsmLexer.cpp */,
+				284F19577E9D47BE8300149C /* MCAsmParser.cpp */,
+				7506E51B3EB94AC0AE889FE4 /* MCAsmParserExtension.cpp */,
+				F3BEF48CD1AF4C629F40A14F /* MCTargetAsmParser.cpp */,
+				A61F733CFA8B4A4DBAF740EA /* MCRegisterInfo.cpp */,
+				750644B758F54ADCB28AA61A /* MCSection.cpp */,
+				5024DE3D4B52415B82CEE871 /* MCSectionCOFF.cpp */,
+				E31FA0EAAFD24FFE8C11B86B /* MCSectionELF.cpp */,
+				C6FBB65C78A14D4DA0FD9BD0 /* MCSectionMachO.cpp */,
+				B32B34C04327457E941219BA /* MCStreamer.cpp */,
+				404829B024F24704942D55FB /* MCSubtargetInfo.cpp */,
+				38DC88B36330449B8A8DBDDD /* MCSymbol.cpp */,
+				045FDA75F76C40FF86A88E82 /* MCSymbolELF.cpp */,
+				42911210C6E9423CA1486460 /* MCTargetOptions.cpp */,
+				0BA51CF6C043401BABD6F904 /* MCValue.cpp */,
+				F44E5C4A714A4015BC449CEB /* StringTableBuilder.cpp */,
+				F953352AD50C4BD4890D7AAF /* SubtargetFeature.cpp */,
+				77C5D838532040C6A6D729B2 /* APFloat.cpp */,
+				3F5CD955B1DE4206A2F4859F /* APInt.cpp */,
+				B8751B6C7DD243FFBBD1A431 /* APSInt.cpp */,
+				15876BA0B5E34A5DA3C7C77D /* ARMBuildAttrs.cpp */,
+				57EBE65452604619B222ED6B /* ErrorHandling.cpp */,
+				FE4894265D974252AFDB170B /* Hashing.cpp */,
+				5478368012344E4080AE250F /* IntEqClasses.cpp */,
+				9F29A0C2DC5E4E84977EA49F /* LEB128.cpp */,
+				023A59A1A1494AD5BF5CF836 /* Memory.cpp */,
+				F30CDBAEA98E4C028DB9FB7C /* MemoryBuffer.cpp */,
+				E6E10020521947E4BB467A53 /* Path.cpp */,
+				93538F4E42B74300B9C87C7E /* Regex.cpp */,
+				D294BFF07B034D66A56715E0 /* ScaledNumber.cpp */,
+				488084A7F0154A948FFD29EC /* SmallPtrSet.cpp */,
+				2444C62DD23148FB8FC112B1 /* SmallVector.cpp */,
+				73B19C4323EC43A6B44836DA /* SourceMgr.cpp */,
+				09EB649E15B842C5BBB0677A /* StringExtras.cpp */,
+				0A64878B7E3843469890ABA4 /* StringMap.cpp */,
+				0F923BE607DC4A40BE3A5952 /* StringPool.cpp */,
+				D7621908CE2048A2A30C2A24 /* StringRef.cpp */,
+				7734BCD032F94AD8AAF28528 /* StringSaver.cpp */,
+				0068B94BA4DB48C0809A8635 /* TargetParser.cpp */,
+				C8108E5B3B234F3A8A72496B /* TargetRegistry.cpp */,
+				F3ECCC4744AB431887A79F7C /* Triple.cpp */,
+				7058EBB459AF439EABE5C6F6 /* Twine.cpp */,
+				4C189E4F70AF42DC8F98AC29 /* raw_ostream.cpp */,
+				F39684690F4D4560AE551F60 /* regcomp.c */,
+				93C95E26B70749599DD7630C /* regerror.c */,
+				50177182C3A542C3BB5B6D94 /* regexec.c */,
+				6B29E22729B74494AAF6CB0D /* regfree.c */,
+				1B7E66B24F4A43B4BCFDCC23 /* regstrlcpy.c */,
+				25F5A9E1D12748748AA430BF /* AArch64AsmParser.cpp */,
+				A1ED3008CBCF47819FDFCDDA /* AArch64AsmBackend.cpp */,
+				B26328BF626A4D15A183B082 /* AArch64ELFObjectWriter.cpp */,
+				8FA38BF07CFD4A48B4ABAC46 /* AArch64MCAsmInfo.cpp */,
+				4C516F7982E84F98A2007194 /* AArch64MCCodeEmitter.cpp */,
+				739A24A25FF345D3A87E1D12 /* AArch64MCExpr.cpp */,
+				F32F0BFEE5E94318B6577F65 /* AArch64MCTargetDesc.cpp */,
+				C160F7AE7DE2465A91FFB760 /* AArch64TargetStreamer.cpp */,
+				FBAADE1E0A15434BB6C693AC /* AArch64TargetInfo.cpp */,
+				EFC4458958D84842945F1F1B /* AArch64BaseInfo.cpp */,
+				8E49F65E8B3645A29D6C013B /* ARMAsmParser.cpp */,
+				E33343FF0936445F99DF3AD3 /* ARMAsmBackend.cpp */,
+				F75AD49581344ACE957AF7DC /* ARMELFObjectWriter.cpp */,
+				5F26F62301EF4AE4A5379392 /* ARMMCAsmInfo.cpp */,
+				BF720EA53FD648F0AE9B15BF /* ARMMCCodeEmitter.cpp */,
+				68C57E3494074DC780559036 /* ARMMCExpr.cpp */,
+				286A951701A448C096D53EB6 /* ARMMCTargetDesc.cpp */,
+				37684FD7763E4E40A382B1D0 /* ARMTargetStreamer.cpp */,
+				7B8AF01986E64A9DB6AF11ED /* ARMTargetInfo.cpp */,
+				46E408DB97034B908AC4FBE2 /* HexagonAsmParser.cpp */,
+				D30A290C2E3440BF9C43B331 /* HexagonAsmBackend.cpp */,
+				8FDF2AFEB5A04B89BCDB51EC /* HexagonELFObjectWriter.cpp */,
+				42A29AC0E370402695D4EA09 /* HexagonMCAsmInfo.cpp */,
+				799DE394D1434202B8803D95 /* HexagonMCChecker.cpp */,
+				DE40CB9327194B408B5E4B1B /* HexagonMCCodeEmitter.cpp */,
+				B69D93800CCC46EAB67025F1 /* HexagonMCCompound.cpp */,
+				CA5C33DFB90640728FA6B659 /* HexagonMCDuplexInfo.cpp */,
+				0B1034FF0E2B4A52A96FA8EB /* HexagonMCExpr.cpp */,
+				15220836322048C3862E9780 /* HexagonMCInstrInfo.cpp */,
+				A580244083D54D239BA89CB8 /* HexagonMCShuffler.cpp */,
+				8AF8BEE7901741C9B417C500 /* HexagonMCTargetDesc.cpp */,
+				0B258BA0828A4D72AF22027E /* HexagonShuffler.cpp */,
+				BDE45FA6C8FA4943AD40D59B /* HexagonTargetInfo.cpp */,
+				5F1A513B8826401DA6C45F00 /* MipsAsmParser.cpp */,
+				D8CCC1AF20C84014A94A4079 /* MipsABIInfo.cpp */,
+				3E484051F99C4A8E864706FE /* MipsAsmBackend.cpp */,
+				328AC2BD476A4A98BD1D8F67 /* MipsELFObjectWriter.cpp */,
+				51334595F67E4897BBD5B484 /* MipsMCAsmInfo.cpp */,
+				5E6C424A5B4B48F6922D3EE8 /* MipsMCCodeEmitter.cpp */,
+				AAF904A78D3D40CB9D67FABF /* MipsMCExpr.cpp */,
+				7A17EF77E4614DE3B918BF3E /* MipsMCTargetDesc.cpp */,
+				98546349701B4805B28B10A3 /* MipsTargetInfo.cpp */,
+				8F7413BE22E84B0D8CE92947 /* PPCAsmParser.cpp */,
+				CF70BC416A06451BA3FCD2CD /* PPCAsmBackend.cpp */,
+				684403F593404EA9A36BAA7B /* PPCELFObjectWriter.cpp */,
+				55934705EE3341D896FD9B6F /* PPCMCAsmInfo.cpp */,
+				9DBDEF7ACF2342A9B773E632 /* PPCMCCodeEmitter.cpp */,
+				E56FCA4D234049B7A846E497 /* PPCMCExpr.cpp */,
+				668E78B7BE0746F2927DF931 /* PPCMCTargetDesc.cpp */,
+				855B9F9E4E2A4CD6A4944232 /* PPCPredicates.cpp */,
+				B327CA5258DA4D0F98313925 /* PowerPCTargetInfo.cpp */,
+				0EC668F33D924EC981607118 /* SparcAsmParser.cpp */,
+				90C1E12294D54DC4AC6C6FA3 /* SparcAsmBackend.cpp */,
+				3AE6FC261AD347FBB10E0CE4 /* SparcELFObjectWriter.cpp */,
+				52F0795DEB7B47229BFF076D /* SparcMCAsmInfo.cpp */,
+				098738B190164F3A9F1D9770 /* SparcMCCodeEmitter.cpp */,
+				88C000C8D1FA404AA434F11A /* SparcMCExpr.cpp */,
+				8E1979CB8EF5429ABEF0A289 /* SparcMCTargetDesc.cpp */,
+				D343F33FB237439B9B699E09 /* SparcTargetInfo.cpp */,
+				920A614BD5044E5D9D269741 /* SystemZAsmParser.cpp */,
+				5447BE81561D4E3AAF7A7BB0 /* SystemZMCAsmBackend.cpp */,
+				46AE0D865E7F4CCE95D3CEF2 /* SystemZMCAsmInfo.cpp */,
+				90B401799CA6458F8EEFFBC1 /* SystemZMCCodeEmitter.cpp */,
+				96C702B0E5AE48F4A0B00EEE /* SystemZMCObjectWriter.cpp */,
+				53725C9522374680A67556EF /* SystemZMCTargetDesc.cpp */,
+				1644B8364FF1424FB7E45458 /* SystemZTargetInfo.cpp */,
+				8BAEA87CB4424245AD7884B2 /* X86AsmInstrumentation.cpp */,
+				FD6B597E862A4402B0625B79 /* X86AsmParser.cpp */,
+				FDB00CFDFE034B1AA6D6D500 /* X86AsmBackend.cpp */,
+				8D1EADBDE0E84EF1B584861A /* X86ELFObjectWriter.cpp */,
+				2FE44691BA364216B62FEE2A /* X86MCAsmInfo.cpp */,
+				0C65D6DAF6704EBE9FFDA140 /* X86MCCodeEmitter.cpp */,
+				517DF514A7CA4C228A9720D8 /* X86MCTargetDesc.cpp */,
+				5182C6F8B4D346C4BE32C63C /* X86TargetInfo.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		B1DE0E66801449B5BB5E5F6D /* keystone */ = {
+			isa = PBXGroup;
+			children = (
+				745C56E483F94E9B8A654F74 /* Source Files */,
+			);
+			name = keystone;
+			path = ../../Submodules/keystone;
+			sourceTree = SOURCE_ROOT;
+		};
+		D70CE3B17F2E480487F153BF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DDBD8330D0574B058B6BF88E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B1DE0E66801449B5BB5E5F6D /* keystone */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D52112F3BA14BC7832DE03D /* keystone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB113E205DBB4CCB81AF2664 /* Build configuration list for PBXNativeTarget "keystone" */;
+			buildPhases = (
+				658CD02DBAD54E89A958DCAC /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = keystone;
+			productName = keystone;
+			productReference = B23D03A8C8BF4BFA86834DEB /* libkeystone.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		052145EF4D7E4434ADAB86A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = ACCA28934B8D4555AB3D5082 /* Build configuration list for PBXProject "keystone" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 650253EB05A5432DB09F8DF4;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D52112F3BA14BC7832DE03D /* keystone */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		658CD02DBAD54E89A958DCAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC76DA6059204374AC5A6B6E /* ks.cpp in Sources */,
+				99C1772D3E484B8BAD16E676 /* ConstantPools.cpp in Sources */,
+				6975326BA995493A9773AFE6 /* ELFObjectWriter.cpp in Sources */,
+				6B381C6AE5644201A05D23FC /* MCAsmBackend.cpp in Sources */,
+				802234890E7A4D3A9CF7E778 /* MCAsmInfo.cpp in Sources */,
+				3CEDD5C709AA45D4A3DFD02E /* MCAsmInfoCOFF.cpp in Sources */,
+				9EE06EAAF1FE49FD879A8CA4 /* MCAsmInfoDarwin.cpp in Sources */,
+				23ECA48E170B489FADCF5AF7 /* MCAsmInfoELF.cpp in Sources */,
+				DBE53C1D56A84211BDAD9F52 /* MCAssembler.cpp in Sources */,
+				53955D93AE6A4A768BACE949 /* MCCodeEmitter.cpp in Sources */,
+				E0F9B8084FA94477BBF6C215 /* MCContext.cpp in Sources */,
+				5BC7173BA68E424BA5734D15 /* MCELFObjectTargetWriter.cpp in Sources */,
+				556E8A750349462C8AD5BDED /* MCELFStreamer.cpp in Sources */,
+				078B3D29781E4D1D98C368A1 /* MCExpr.cpp in Sources */,
+				46EF97638338487B802917E9 /* MCFragment.cpp in Sources */,
+				77D908F0CD344D8A88686ED2 /* MCInst.cpp in Sources */,
+				FBBA54E40349438FB26FC954 /* MCInstrDesc.cpp in Sources */,
+				F0AA5C254C3741BBA44B0851 /* MCLabel.cpp in Sources */,
+				2822E4BF6C7A4141BA7DDF37 /* MCObjectFileInfo.cpp in Sources */,
+				F055C9B2A4B343FC8437DC06 /* MCObjectStreamer.cpp in Sources */,
+				BAEC3015952C498FA82102FA /* MCObjectWriter.cpp in Sources */,
+				458EEF1CBE5245659FC7D025 /* AsmLexer.cpp in Sources */,
+				A8CB332C7BA747BF8D3CA9A8 /* AsmParser.cpp in Sources */,
+				FE4C7DE314784EA7847CD084 /* COFFAsmParser.cpp in Sources */,
+				B6E51D0F637B43E183A25117 /* DarwinAsmParser.cpp in Sources */,
+				B38BAFE0198847ABAA6FEFD2 /* ELFAsmParser.cpp in Sources */,
+				2BF83C0E445C49949736008F /* MCAsmLexer.cpp in Sources */,
+				6B45D76D4D4C4720A0C3147E /* MCAsmParser.cpp in Sources */,
+				21083FF4CA2146958FE2F521 /* MCAsmParserExtension.cpp in Sources */,
+				E5B17CA866E34D63AD72DDE6 /* MCTargetAsmParser.cpp in Sources */,
+				4ED809D9458A417689302ECE /* MCRegisterInfo.cpp in Sources */,
+				616B946E44A54614B2F73EA8 /* MCSection.cpp in Sources */,
+				F20F4A15533C438894D9D433 /* MCSectionCOFF.cpp in Sources */,
+				D2509314B8014B07926076BE /* MCSectionELF.cpp in Sources */,
+				C809317CCC33406BB0FBE443 /* MCSectionMachO.cpp in Sources */,
+				E909ECA5AFAB4BDCAE164209 /* MCStreamer.cpp in Sources */,
+				8EDC8760102D4B7985328AB6 /* MCSubtargetInfo.cpp in Sources */,
+				A3727FD564C940C797855E66 /* MCSymbol.cpp in Sources */,
+				F6239D2459FB485AB4C1795F /* MCSymbolELF.cpp in Sources */,
+				88D4CDF418C942EBB4E5A754 /* MCTargetOptions.cpp in Sources */,
+				EDE233597B334593BB9B818B /* MCValue.cpp in Sources */,
+				13824FBFB1454CEDBFDFCA0A /* StringTableBuilder.cpp in Sources */,
+				AC223E7BD0C94D26B6F31CA9 /* SubtargetFeature.cpp in Sources */,
+				32F33E3BF8FC455CA72A8901 /* APFloat.cpp in Sources */,
+				FEC4B305E85D4576BB9FF67C /* APInt.cpp in Sources */,
+				8B91FC744B204EBB8AB07433 /* APSInt.cpp in Sources */,
+				3B2A36BC3B8C49F3965368DA /* ARMBuildAttrs.cpp in Sources */,
+				0B2C7DF7368A4F7C8FF83EDD /* ErrorHandling.cpp in Sources */,
+				2D0BC6BE2E9745CC8B014F6A /* Hashing.cpp in Sources */,
+				D67070A9733147EA9501E251 /* IntEqClasses.cpp in Sources */,
+				077E6F7CD55149BD8126DC4B /* LEB128.cpp in Sources */,
+				B6857E94100C4973BB08D8AC /* Memory.cpp in Sources */,
+				6E12DCF893D04FAC8C95E1BA /* MemoryBuffer.cpp in Sources */,
+				8635A4A28EA84EB298B13520 /* Path.cpp in Sources */,
+				B0D225F46C9243C9AC43E1C9 /* Regex.cpp in Sources */,
+				43D26E02039F4119826D1597 /* ScaledNumber.cpp in Sources */,
+				7E31E7B104724FC8AF60781F /* SmallPtrSet.cpp in Sources */,
+				4C6F23778D154D57AB215342 /* SmallVector.cpp in Sources */,
+				301777E92C434B15A848D8D4 /* SourceMgr.cpp in Sources */,
+				D5AD7BF3CE8948CF87160990 /* StringExtras.cpp in Sources */,
+				6A25B612C22E497CA16B09C6 /* StringMap.cpp in Sources */,
+				4F33FAC5B3944858ADA1B963 /* StringPool.cpp in Sources */,
+				7AAEA4F3F1D242369E4AD261 /* StringRef.cpp in Sources */,
+				61C73875B7624818ADDBAE23 /* StringSaver.cpp in Sources */,
+				E271A087E9454E10857AB7A4 /* TargetParser.cpp in Sources */,
+				789281248BA0458BAC865CC2 /* TargetRegistry.cpp in Sources */,
+				33249FC6D89A4423B72CBADB /* Triple.cpp in Sources */,
+				6971D1733128438DA23E6187 /* Twine.cpp in Sources */,
+				9DAEBE90460F4F53A35BB34C /* raw_ostream.cpp in Sources */,
+				05EE7E5D2AE745F2B6171E45 /* regcomp.c in Sources */,
+				19CCB43B0F374C36AECDA081 /* regerror.c in Sources */,
+				9ADCC255AFF246A4AFF7132B /* regexec.c in Sources */,
+				AE7098CF78A5411381486CD0 /* regfree.c in Sources */,
+				1E6AD5B90B50459FA796CE1F /* regstrlcpy.c in Sources */,
+				AFFD334D78AE4918A45E23F9 /* AArch64AsmParser.cpp in Sources */,
+				404DB7FCF87B4D5AB55189AE /* AArch64AsmBackend.cpp in Sources */,
+				1ECE58FACBF74174BE53B871 /* AArch64ELFObjectWriter.cpp in Sources */,
+				3207D7F80EBC487FA0B64F58 /* AArch64MCAsmInfo.cpp in Sources */,
+				8D2845FB854C4C9FAF9E705A /* AArch64MCCodeEmitter.cpp in Sources */,
+				DF42C37831FD40218FF2D28F /* AArch64MCExpr.cpp in Sources */,
+				E8DE456C5691487CABF91319 /* AArch64MCTargetDesc.cpp in Sources */,
+				1C15D40A6E934E438DD7CDB6 /* AArch64TargetStreamer.cpp in Sources */,
+				2A81216265374171932BA106 /* AArch64TargetInfo.cpp in Sources */,
+				AA0ED412B0EC43C9B11EECDA /* AArch64BaseInfo.cpp in Sources */,
+				9492BF9CA0074E488C9FB941 /* ARMAsmParser.cpp in Sources */,
+				F6D94A181E8544C3A377A88B /* ARMAsmBackend.cpp in Sources */,
+				BAE2AAB6A4CA48CBA773A5BE /* ARMELFObjectWriter.cpp in Sources */,
+				1594623BEBD64C67949F8A41 /* ARMMCAsmInfo.cpp in Sources */,
+				3EA25771D2D94AD08EA19A9B /* ARMMCCodeEmitter.cpp in Sources */,
+				98A43DA697D64F33A3F0C5D1 /* ARMMCExpr.cpp in Sources */,
+				611CB189838D4B3CA9FB751B /* ARMMCTargetDesc.cpp in Sources */,
+				A4770572B87344AB9E18E692 /* ARMTargetStreamer.cpp in Sources */,
+				A2FA83CDC76248D2A8437109 /* ARMTargetInfo.cpp in Sources */,
+				D94900CB4DD04AA985B254F2 /* HexagonAsmParser.cpp in Sources */,
+				F6946D88402A4806A375D974 /* HexagonAsmBackend.cpp in Sources */,
+				8F0542738BC04FA6B49A12D2 /* HexagonELFObjectWriter.cpp in Sources */,
+				13D72D3145ED4C9EAEEC7576 /* HexagonMCAsmInfo.cpp in Sources */,
+				33E9157C8DDB499B813BAAC4 /* HexagonMCChecker.cpp in Sources */,
+				DFB21B35614F4769BA29DD9A /* HexagonMCCodeEmitter.cpp in Sources */,
+				463784CA99484E1B986DF0F0 /* HexagonMCCompound.cpp in Sources */,
+				4E3105762FAC42769530FF8B /* HexagonMCDuplexInfo.cpp in Sources */,
+				F577F6122AE7426FA4BDD686 /* HexagonMCExpr.cpp in Sources */,
+				E3973A3A7F934C8992F80380 /* HexagonMCInstrInfo.cpp in Sources */,
+				3B3D54DC7E1946869AEB2788 /* HexagonMCShuffler.cpp in Sources */,
+				5B26B20C6AD44FEA915FD707 /* HexagonMCTargetDesc.cpp in Sources */,
+				54A97405C6964B6FA928A65C /* HexagonShuffler.cpp in Sources */,
+				5732A2471EA84F0CA3C8AF92 /* HexagonTargetInfo.cpp in Sources */,
+				956CAF5F3DAD4FC694A543C8 /* MipsAsmParser.cpp in Sources */,
+				104FC164D3DD48D79B60F3CB /* MipsABIInfo.cpp in Sources */,
+				776BB76E29CC4325A3EF8624 /* MipsAsmBackend.cpp in Sources */,
+				FCAF94866D204FCFBECE956F /* MipsELFObjectWriter.cpp in Sources */,
+				4DA1553C397C4EF5A10C4AC2 /* MipsMCAsmInfo.cpp in Sources */,
+				4FE30B59488E4E1C9C7575F9 /* MipsMCCodeEmitter.cpp in Sources */,
+				FF463F60D31E42FD834B4CAC /* MipsMCExpr.cpp in Sources */,
+				BFDBAA17631F4321893EB946 /* MipsMCTargetDesc.cpp in Sources */,
+				4A45FD44324A48BFAE08B0D0 /* MipsTargetInfo.cpp in Sources */,
+				565E0F27300440DABEB95A2C /* PPCAsmParser.cpp in Sources */,
+				AA1C8F7852B841FDBC2275E5 /* PPCAsmBackend.cpp in Sources */,
+				86DDDF7AFCE545748FEA6250 /* PPCELFObjectWriter.cpp in Sources */,
+				9C6C3444EA164139B2296C4B /* PPCMCAsmInfo.cpp in Sources */,
+				3D23A705ABD9427693702322 /* PPCMCCodeEmitter.cpp in Sources */,
+				D29AD9440E1D4EF59AF1AD19 /* PPCMCExpr.cpp in Sources */,
+				512590BD980147EAA07FCDB9 /* PPCMCTargetDesc.cpp in Sources */,
+				44A9D1636CB94B3AB59154AB /* PPCPredicates.cpp in Sources */,
+				0B7D64CD514E4999A6BFA060 /* PowerPCTargetInfo.cpp in Sources */,
+				1EC700E11153488DB7C5B20A /* SparcAsmParser.cpp in Sources */,
+				75FF2392178F4855B7381AD5 /* SparcAsmBackend.cpp in Sources */,
+				AA67D32720BE44EDA4E3ADE5 /* SparcELFObjectWriter.cpp in Sources */,
+				6B7B9E2EC6814C6EBC09CD29 /* SparcMCAsmInfo.cpp in Sources */,
+				922AA62C28764AF980FF0F1B /* SparcMCCodeEmitter.cpp in Sources */,
+				2CBB19BC722D40BA90DF7EA9 /* SparcMCExpr.cpp in Sources */,
+				AA091EDBCA36439CB63E6BA0 /* SparcMCTargetDesc.cpp in Sources */,
+				4307A7C92E044866B0236211 /* SparcTargetInfo.cpp in Sources */,
+				3AD91507598A4D8488A57486 /* SystemZAsmParser.cpp in Sources */,
+				643A9FED308C47AA9C4AE2E0 /* SystemZMCAsmBackend.cpp in Sources */,
+				CE34684D2F2E45F3827B0736 /* SystemZMCAsmInfo.cpp in Sources */,
+				51126A873794483299302E73 /* SystemZMCCodeEmitter.cpp in Sources */,
+				B82CCD4309C84B05A545DB56 /* SystemZMCObjectWriter.cpp in Sources */,
+				BB8E2B71D6274EA6B4059F7A /* SystemZMCTargetDesc.cpp in Sources */,
+				73479A1507FC4315AE5F9115 /* SystemZTargetInfo.cpp in Sources */,
+				D11E988A93BB4176B54880B7 /* X86AsmInstrumentation.cpp in Sources */,
+				CF9C906DB878406D973A999E /* X86AsmParser.cpp in Sources */,
+				325E12D5477E43D692FD11B2 /* X86AsmBackend.cpp in Sources */,
+				F262AC20AC8A4AACBF3360F3 /* X86ELFObjectWriter.cpp in Sources */,
+				D1DFC4EB18744B028061C16D /* X86MCAsmInfo.cpp in Sources */,
+				28B8B354637948E3A253027C /* X86MCCodeEmitter.cpp in Sources */,
+				EA9B15F4C4164F9083F2F9F6 /* X86MCTargetDesc.cpp in Sources */,
+				0EF20B1B88B046FE8267BE44 /* X86TargetInfo.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0AF2930467F54438885A078B /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = MinSizeRel;
+		};
+		290B4C01AC304575A04DC79A /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					__STDC_CONSTANT_MACROS,
+					__STDC_FORMAT_MACROS,
+					__STDC_LIMIT_MACROS,
+					LLVM_ENABLE_ARCH_AArch64,
+					LLVM_ENABLE_ARCH_ARM,
+					LLVM_ENABLE_ARCH_Hexagon,
+					LLVM_ENABLE_ARCH_Mips,
+					LLVM_ENABLE_ARCH_PowerPC,
+					LLVM_ENABLE_ARCH_Sparc,
+					LLVM_ENABLE_ARCH_SystemZ,
+					LLVM_ENABLE_ARCH_X86,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"${PROJECT_DIR}/../../Helpers/keystone_xcode/llvm/keystone",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone",
+					"${PROJECT_DIR}/../../Helpers/keystone_xcode/llvm/include",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/include",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../../include",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/AArch64",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/ARM",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/Hexagon",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/Mips",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/PowerPC",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/Sparc",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/SystemZ",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/X86",
+				);
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-W",
+					"-Wno-unused-parameter",
+					"-Wwrite-strings",
+					"-Wmissing-field-initializers",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wcovered-switch-default",
+					"-Wdelete-non-virtual-dtor",
+					"-DNDEBUG",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-fvisibility-inlines-hidden",
+					"-Wall",
+					"-W",
+					"-Wno-unused-parameter",
+					"-Wwrite-strings",
+					"-Wcast-qual",
+					"-Wmissing-field-initializers",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wcovered-switch-default",
+					"-Wnon-virtual-dtor",
+					"-Wdelete-non-virtual-dtor",
+					"-std=c++11",
+					"-DNDEBUG",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = keystone;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		2DB0874246794279A2B0B777 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					__STDC_CONSTANT_MACROS,
+					__STDC_FORMAT_MACROS,
+					__STDC_LIMIT_MACROS,
+					LLVM_ENABLE_ARCH_AArch64,
+					LLVM_ENABLE_ARCH_ARM,
+					LLVM_ENABLE_ARCH_Hexagon,
+					LLVM_ENABLE_ARCH_Mips,
+					LLVM_ENABLE_ARCH_PowerPC,
+					LLVM_ENABLE_ARCH_Sparc,
+					LLVM_ENABLE_ARCH_SystemZ,
+					LLVM_ENABLE_ARCH_X86,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"${PROJECT_DIR}/../../Helpers/keystone_xcode/llvm/keystone",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone",
+					"${PROJECT_DIR}/../../Helpers/keystone_xcode/llvm/include",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/include",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../../include",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/AArch64",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/ARM",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/Hexagon",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/Mips",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/PowerPC",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/Sparc",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/SystemZ",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/X86",
+				);
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-W",
+					"-Wno-unused-parameter",
+					"-Wwrite-strings",
+					"-Wmissing-field-initializers",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wcovered-switch-default",
+					"-Wdelete-non-virtual-dtor",
+					"-DNDEBUG",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-fvisibility-inlines-hidden",
+					"-Wall",
+					"-W",
+					"-Wno-unused-parameter",
+					"-Wwrite-strings",
+					"-Wcast-qual",
+					"-Wmissing-field-initializers",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wcovered-switch-default",
+					"-Wnon-virtual-dtor",
+					"-Wdelete-non-virtual-dtor",
+					"-std=c++11",
+					"-DNDEBUG",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = keystone;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		3C9E5A164A344FFA9C794B20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					__STDC_CONSTANT_MACROS,
+					__STDC_FORMAT_MACROS,
+					__STDC_LIMIT_MACROS,
+					LLVM_ENABLE_ARCH_AArch64,
+					LLVM_ENABLE_ARCH_ARM,
+					LLVM_ENABLE_ARCH_Hexagon,
+					LLVM_ENABLE_ARCH_Mips,
+					LLVM_ENABLE_ARCH_PowerPC,
+					LLVM_ENABLE_ARCH_Sparc,
+					LLVM_ENABLE_ARCH_SystemZ,
+					LLVM_ENABLE_ARCH_X86,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"${PROJECT_DIR}/../../Helpers/keystone_xcode/llvm/keystone",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone",
+					"${PROJECT_DIR}/../../Helpers/keystone_xcode/llvm/include",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/include",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../../include",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/AArch64",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/ARM",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/Hexagon",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/Mips",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/PowerPC",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/Sparc",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/SystemZ",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/X86",
+				);
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-W",
+					"-Wno-unused-parameter",
+					"-Wwrite-strings",
+					"-Wmissing-field-initializers",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wcovered-switch-default",
+					"-Wdelete-non-virtual-dtor",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-fvisibility-inlines-hidden",
+					"-Wall",
+					"-W",
+					"-Wno-unused-parameter",
+					"-Wwrite-strings",
+					"-Wcast-qual",
+					"-Wmissing-field-initializers",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wcovered-switch-default",
+					"-Wnon-virtual-dtor",
+					"-Wdelete-non-virtual-dtor",
+					"-std=c++11",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = keystone;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		489E29F7109F4E93857CBCEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9B43B905180549F18E018896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					__STDC_CONSTANT_MACROS,
+					__STDC_FORMAT_MACROS,
+					__STDC_LIMIT_MACROS,
+					LLVM_ENABLE_ARCH_AArch64,
+					LLVM_ENABLE_ARCH_ARM,
+					LLVM_ENABLE_ARCH_Hexagon,
+					LLVM_ENABLE_ARCH_Mips,
+					LLVM_ENABLE_ARCH_PowerPC,
+					LLVM_ENABLE_ARCH_Sparc,
+					LLVM_ENABLE_ARCH_SystemZ,
+					LLVM_ENABLE_ARCH_X86,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"${PROJECT_DIR}/../../Helpers/keystone_xcode/llvm/keystone",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone",
+					"${PROJECT_DIR}/../../Helpers/keystone_xcode/llvm/include",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/include",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../../include",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/AArch64",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/ARM",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/Hexagon",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/Mips",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/PowerPC",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/Sparc",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/SystemZ",
+					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/X86",
+				);
+				LIBRARY_STYLE = STATIC;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"-Wall",
+					"-W",
+					"-Wno-unused-parameter",
+					"-Wwrite-strings",
+					"-Wmissing-field-initializers",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wcovered-switch-default",
+					"-Wdelete-non-virtual-dtor",
+					"-DNDEBUG",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-fvisibility-inlines-hidden",
+					"-Wall",
+					"-W",
+					"-Wno-unused-parameter",
+					"-Wwrite-strings",
+					"-Wcast-qual",
+					"-Wmissing-field-initializers",
+					"-pedantic",
+					"-Wno-long-long",
+					"-Wcovered-switch-default",
+					"-Wnon-virtual-dtor",
+					"-Wdelete-non-virtual-dtor",
+					"-std=c++11",
+					"-DNDEBUG",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = keystone;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		C94A3176C24542FDB7FA3A29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FBDEDDECB75C459C8A218677 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACCA28934B8D4555AB3D5082 /* Build configuration list for PBXProject "keystone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C94A3176C24542FDB7FA3A29 /* Debug */,
+				489E29F7109F4E93857CBCEF /* Release */,
+				0AF2930467F54438885A078B /* MinSizeRel */,
+				FBDEDDECB75C459C8A218677 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DB113E205DBB4CCB81AF2664 /* Build configuration list for PBXNativeTarget "keystone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C9E5A164A344FFA9C794B20 /* Debug */,
+				9B43B905180549F18E018896 /* Release */,
+				2DB0874246794279A2B0B777 /* MinSizeRel */,
+				290B4C01AC304575A04DC79A /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 052145EF4D7E4434ADAB86A1 /* Project object */;
+}

@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12118"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
@@ -10,154 +12,168 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
-        <window title="AsmHelper" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" wantsToBeColor="NO" animationBehavior="default" id="21" userLabel="Window">
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="AsmHelper" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="21" userLabel="Window">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
-            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="269" y="762" width="675" height="239"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
+            <windowPositionMask key="initialPositionMask" bottomStrut="YES"/>
+            <rect key="contentRect" x="269" y="566" width="423" height="154"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
             <view key="contentView" id="2">
-                <rect key="frame" x="0.0" y="0.0" width="675" height="239"/>
+                <rect key="frame" x="0.0" y="0.0" width="516" height="154"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <box title="Asm To Hexa" id="217">
-                        <rect key="frame" x="17" y="126" width="641" height="93"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <view key="contentView">
-                            <rect key="frame" x="2" y="2" width="637" height="76"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            <subviews>
-                                <textField verticalHuggingPriority="750" id="207">
-                                    <rect key="frame" x="11" y="48" width="92" height="17"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Instruction :" id="240">
-                                        <font key="font" metaFont="system"/>
-                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                    </textFieldCell>
-                                </textField>
-                                <textField verticalHuggingPriority="750" id="208">
-                                    <rect key="frame" x="20" y="18" width="192" height="22"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="241">
-                                        <font key="font" size="12" name="Monaco"/>
-                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                    </textFieldCell>
-                                </textField>
-                                <textField verticalHuggingPriority="750" id="209">
-                                    <rect key="frame" x="237" y="48" width="92" height="17"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Architecture :" id="242">
-                                        <font key="font" metaFont="system"/>
-                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                    </textFieldCell>
-                                </textField>
-                                <popUpButton verticalHuggingPriority="750" id="210">
-                                    <rect key="frame" x="242" y="16" width="130" height="26"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" id="243">
-                                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                                        <font key="font" metaFont="menu"/>
-                                        <menu key="menu" title="OtherViews" id="211"/>
-                                    </popUpButtonCell>
-                                </popUpButton>
-                                <button verticalHuggingPriority="750" id="215">
-                                    <rect key="frame" x="401" y="38" width="111" height="32"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <buttonCell key="cell" type="push" title="Hexa Value" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="244">
-                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                        <font key="font" metaFont="system"/>
-                                    </buttonCell>
-                                    <connections>
-                                        <action selector="convertASMToHexa:" target="206" id="L8g-9D-XtE"/>
-                                    </connections>
-                                </button>
-                                <textField verticalHuggingPriority="750" id="216">
-                                    <rect key="frame" x="421" y="21" width="205" height="17"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" title="-" id="245">
-                                        <font key="font" size="12" name="Monaco"/>
-                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                    </textFieldCell>
-                                </textField>
-                            </subviews>
-                        </view>
-                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
-                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="210">
+                        <rect key="frame" x="101" y="112" width="37" height="26"/>
+                        <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" id="243">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" title="OtherViews" id="211"/>
+                        </popUpButtonCell>
+                    </popUpButton>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXo-Du-G1v">
+                        <rect key="frame" x="158" y="117" width="46" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Syntax" id="gUI-6V-fPo">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="r6N-Gb-3z5">
+                        <rect key="frame" x="208" y="112" width="37" height="26"/>
+                        <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" id="A4T-JJ-XGn">
+                            <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" title="OtherViews" id="5bt-kT-ow5"/>
+                        </popUpButtonCell>
+                    </popUpButton>
+                    <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="208">
+                        <rect key="frame" x="105" y="52" width="200" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="Nry-P2-aiq"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="assembly code" drawsBackground="YES" id="241">
+                            <font key="font" metaFont="fixedUser" size="11"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="Bgn-uH-LCX">
+                        <rect key="frame" x="12" y="92" width="492" height="5"/>
                     </box>
-                    <box title="Hexa To Asm" id="219">
-                        <rect key="frame" x="17" y="16" width="641" height="93"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <view key="contentView">
-                            <rect key="frame" x="2" y="2" width="637" height="76"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            <subviews>
-                                <textField verticalHuggingPriority="750" id="222">
-                                    <rect key="frame" x="17" y="48" width="92" height="17"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Hexa Value :" id="246">
-                                        <font key="font" metaFont="system"/>
-                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                    </textFieldCell>
-                                </textField>
-                                <textField verticalHuggingPriority="750" id="223">
-                                    <rect key="frame" x="26" y="18" width="192" height="22"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="247">
-                                        <font key="font" size="12" name="Monaco"/>
-                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                    </textFieldCell>
-                                </textField>
-                                <textField verticalHuggingPriority="750" id="224">
-                                    <rect key="frame" x="243" y="48" width="92" height="17"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Architecture :" id="248">
-                                        <font key="font" metaFont="system"/>
-                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                    </textFieldCell>
-                                </textField>
-                                <popUpButton verticalHuggingPriority="750" id="225">
-                                    <rect key="frame" x="248" y="16" width="130" height="26"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" inset="2" arrowPosition="arrowAtCenter" preferredEdge="maxY" id="249">
-                                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                                        <font key="font" metaFont="menu"/>
-                                        <menu key="menu" title="OtherViews" id="226"/>
-                                    </popUpButtonCell>
-                                </popUpButton>
-                                <button verticalHuggingPriority="750" id="229">
-                                    <rect key="frame" x="407" y="38" width="111" height="32"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <buttonCell key="cell" type="push" title="Instruction" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="250">
-                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                        <font key="font" metaFont="system"/>
-                                    </buttonCell>
-                                    <connections>
-                                        <action selector="convertHexaToASM:" target="206" id="Vmf-K8-cz8"/>
-                                    </connections>
-                                </button>
-                                <textField verticalHuggingPriority="750" id="230">
-                                    <rect key="frame" x="427" y="21" width="205" height="17"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <textFieldCell key="cell" selectable="YES" sendsActionOnEndEditing="YES" title="-" id="251">
-                                        <font key="font" size="12" name="Monaco"/>
-                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                    </textFieldCell>
-                                </textField>
-                            </subviews>
-                        </view>
-                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
-                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </box>
+                    <textField verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="223">
+                        <rect key="frame" x="105" y="20" width="200" height="22"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="machine code" drawsBackground="YES" id="247">
+                            <font key="font" metaFont="fixedUser" size="11"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="749" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkV-yy-bmM">
+                        <rect key="frame" x="344" y="55" width="154" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="I7R-gJ-ZLN"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" title="-" id="sFl-Kg-Kwq">
+                            <font key="font" metaFont="fixedUser" size="11"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="749" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t8E-ft-rJ7">
+                        <rect key="frame" x="344" y="23" width="154" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="9rh-xm-Q6H"/>
+                        </constraints>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" sendsActionOnEndEditing="YES" title="-" id="tm6-aN-ikA">
+                            <font key="font" metaFont="fixedUser" size="11"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xal-H3-Asc">
+                        <rect key="frame" x="18" y="117" width="79" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Architecture" id="cVX-5d-gwI">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="751" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZk-Lo-iwl">
+                        <rect key="frame" x="31" y="55" width="63" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Assemble" id="ckG-YL-JOa">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="751" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hL-72-1si">
+                        <rect key="frame" x="18" y="23" width="81" height="17"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Disassemble" id="vmu-fx-gXO">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button horizontalHuggingPriority="751" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="3s1-iN-BmB">
+                        <rect key="frame" x="313" y="53" width="25" height="19"/>
+                        <buttonCell key="cell" type="roundRect" title="→" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Pik-wW-NhO">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="cellTitle"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="convertASMToHexa:" target="206" id="FoS-Sd-5Wy"/>
+                        </connections>
+                    </button>
+                    <button horizontalHuggingPriority="751" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="Kkf-3h-5QR">
+                        <rect key="frame" x="313" y="21" width="25" height="19"/>
+                        <buttonCell key="cell" type="roundRect" title="→" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="k3o-yF-UFq">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="cellTitle"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="convertHexaToASM:" target="206" id="w76-JX-pcb"/>
+                        </connections>
+                    </button>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="208" firstAttribute="top" secondItem="Bgn-uH-LCX" secondAttribute="bottom" constant="20" id="1cf-fV-3by"/>
+                    <constraint firstItem="208" firstAttribute="leading" secondItem="RZk-Lo-iwl" secondAttribute="trailing" constant="13" id="46Z-Uj-aRx"/>
+                    <constraint firstItem="5hL-72-1si" firstAttribute="leading" secondItem="2" secondAttribute="leading" priority="750" id="7TI-uc-gbz"/>
+                    <constraint firstItem="3s1-iN-BmB" firstAttribute="leading" secondItem="208" secondAttribute="trailing" constant="8" symbolic="YES" id="9eg-G2-cmV"/>
+                    <constraint firstItem="xal-H3-Asc" firstAttribute="top" secondItem="2" secondAttribute="top" constant="20" symbolic="YES" id="Ag1-xY-2uP"/>
+                    <constraint firstItem="223" firstAttribute="top" secondItem="208" secondAttribute="bottom" constant="10" symbolic="YES" id="G8F-iE-G50"/>
+                    <constraint firstItem="3s1-iN-BmB" firstAttribute="centerY" secondItem="pkV-yy-bmM" secondAttribute="centerY" id="HDQ-sq-ibU"/>
+                    <constraint firstItem="223" firstAttribute="centerY" secondItem="5hL-72-1si" secondAttribute="centerY" id="HqZ-2K-Wfb"/>
+                    <constraint firstItem="Kkf-3h-5QR" firstAttribute="centerY" secondItem="t8E-ft-rJ7" secondAttribute="centerY" id="IlI-mB-rZV"/>
+                    <constraint firstItem="223" firstAttribute="leading" secondItem="5hL-72-1si" secondAttribute="trailing" constant="8" symbolic="YES" id="IvS-rv-8wa"/>
+                    <constraint firstItem="5hL-72-1si" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2" secondAttribute="leading" constant="20" symbolic="YES" id="MZQ-hx-B5v"/>
+                    <constraint firstItem="210" firstAttribute="centerY" secondItem="xal-H3-Asc" secondAttribute="centerY" id="OB3-el-hDd"/>
+                    <constraint firstItem="pkV-yy-bmM" firstAttribute="leading" secondItem="3s1-iN-BmB" secondAttribute="trailing" constant="8" symbolic="YES" id="Qg3-bT-4yJ"/>
+                    <constraint firstItem="223" firstAttribute="leading" secondItem="208" secondAttribute="leading" id="RoS-ul-ycz"/>
+                    <constraint firstAttribute="bottom" secondItem="223" secondAttribute="bottom" constant="20" symbolic="YES" id="SGu-Uv-P0U"/>
+                    <constraint firstItem="3s1-iN-BmB" firstAttribute="centerY" secondItem="208" secondAttribute="centerY" id="Sp4-du-kNj"/>
+                    <constraint firstItem="SXo-Du-G1v" firstAttribute="centerY" secondItem="210" secondAttribute="centerY" id="T7d-GY-qkh"/>
+                    <constraint firstItem="t8E-ft-rJ7" firstAttribute="leading" secondItem="Kkf-3h-5QR" secondAttribute="trailing" constant="8" symbolic="YES" id="VEE-7d-2i5"/>
+                    <constraint firstItem="Kkf-3h-5QR" firstAttribute="centerY" secondItem="223" secondAttribute="centerY" id="Ydo-sj-QW7"/>
+                    <constraint firstItem="Bgn-uH-LCX" firstAttribute="top" secondItem="210" secondAttribute="bottom" constant="20" id="Yf4-fF-Whu"/>
+                    <constraint firstAttribute="trailing" secondItem="Bgn-uH-LCX" secondAttribute="trailing" constant="12" symbolic="YES" id="Zbt-Jm-4ll"/>
+                    <constraint firstItem="r6N-Gb-3z5" firstAttribute="leading" secondItem="SXo-Du-G1v" secondAttribute="trailing" constant="8" symbolic="YES" id="Zmi-j0-f6y"/>
+                    <constraint firstItem="210" firstAttribute="leading" secondItem="xal-H3-Asc" secondAttribute="trailing" constant="8" symbolic="YES" id="hO1-5c-DQ6"/>
+                    <constraint firstItem="xal-H3-Asc" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="20" symbolic="YES" id="hUA-oY-lOR"/>
+                    <constraint firstItem="Bgn-uH-LCX" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="12" symbolic="YES" id="kXR-Nx-2ZX"/>
+                    <constraint firstItem="r6N-Gb-3z5" firstAttribute="centerY" secondItem="SXo-Du-G1v" secondAttribute="centerY" id="nDm-jN-HZL"/>
+                    <constraint firstItem="RZk-Lo-iwl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2" secondAttribute="leading" constant="20" symbolic="YES" id="qV8-zr-Cwe"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="r6N-Gb-3z5" secondAttribute="trailing" constant="20" symbolic="YES" id="qzV-k5-294"/>
+                    <constraint firstAttribute="trailing" secondItem="pkV-yy-bmM" secondAttribute="trailing" constant="20" symbolic="YES" id="rAx-Gf-Z4h"/>
+                    <constraint firstAttribute="trailing" secondItem="t8E-ft-rJ7" secondAttribute="trailing" constant="20" symbolic="YES" id="ta9-Jg-4Vm"/>
+                    <constraint firstItem="223" firstAttribute="width" secondItem="208" secondAttribute="width" id="vZv-gt-O5X"/>
+                    <constraint firstItem="208" firstAttribute="centerY" secondItem="RZk-Lo-iwl" secondAttribute="centerY" id="w3I-l1-jbs"/>
+                    <constraint firstItem="Kkf-3h-5QR" firstAttribute="leading" secondItem="223" secondAttribute="trailing" constant="8" symbolic="YES" id="wpY-HX-bLP"/>
+                    <constraint firstItem="SXo-Du-G1v" firstAttribute="leading" secondItem="210" secondAttribute="trailing" constant="25" id="wvG-07-pze"/>
+                    <constraint firstItem="RZk-Lo-iwl" firstAttribute="leading" secondItem="2" secondAttribute="leading" priority="750" id="zeO-lC-BEN"/>
+                </constraints>
             </view>
+            <point key="canvasLocation" x="107" y="109"/>
         </window>
         <menu title="MainMenu" systemMenu="main" id="29" userLabel="MainMenu">
             <items>
@@ -399,18 +415,13 @@
         </menu>
         <customObject id="206" userLabel="MainController" customClass="MainController">
             <connections>
-                <outlet property="a2h_arch" destination="210" id="232"/>
-                <outlet property="a2h_in" destination="208" id="231"/>
-                <outlet property="a2h_out" destination="216" id="233"/>
-                <outlet property="asmToHexaArch" destination="210" id="UaO-ZJ-mGy"/>
+                <outlet property="architectures" destination="210" id="6nu-R8-P3D"/>
                 <outlet property="asmToHexaInput" destination="208" id="LVf-EB-nke"/>
-                <outlet property="asmToHexaOutput" destination="216" id="IPJ-za-PFT"/>
-                <outlet property="h2a_arch" destination="225" id="235"/>
-                <outlet property="h2a_in" destination="223" id="234"/>
-                <outlet property="h2a_out" destination="230" id="236"/>
-                <outlet property="hexaToAsmArch" destination="225" id="O6f-TB-pcA"/>
+                <outlet property="asmToHexaOutput" destination="pkV-yy-bmM" id="hOB-fU-uwc"/>
                 <outlet property="hexaToAsmInput" destination="223" id="9ck-HQ-POW"/>
-                <outlet property="hexaToAsmOutput" destination="230" id="7de-8p-kmn"/>
+                <outlet property="hexaToAsmOutput" destination="t8E-ft-rJ7" id="OhV-Sh-Y1n"/>
+                <outlet property="syntaxes" destination="r6N-Gb-3z5" id="ngs-zl-ct9"/>
+                <outlet property="window" destination="21" id="ghj-ni-t0i"/>
             </connections>
         </customObject>
     </objects>

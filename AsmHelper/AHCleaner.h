@@ -1,7 +1,7 @@
 /*
  *  AHCleaner.h
  *
- *  Copyright 2014 Avérous Julien-Pierre
+ *  Copyright 2017 Avérous Julien-Pierre
  *
  *  This file is part of AsmHelper.
  *

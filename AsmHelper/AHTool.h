@@ -1,7 +1,7 @@
 /*
  *  AHTool.h
  *
- *  Copyright 2014 Avérous Julien-Pierre
+ *  Copyright 2017 Avérous Julien-Pierre
  *
  *  This file is part of AsmHelper.
  *
@@ -32,9 +32,11 @@
 
 // -- Properties --
 + (NSArray *)architectures;
++ (NSArray *)syntaxes;
+
 
 // -- Convertions --
-+ (NSString *)hexadecimalStringForASMString:(NSString *)asmString withArchitecture:(NSString *)architecture;
-+ (NSString *)ASMStringForHexadecimalString:(NSString *)hexaString withArchitecture:(NSString *)architecture;
++ (NSString *)hexadecimalStringForASMString:(NSString *)asmString architecture:(NSString *)architecture syntax:(NSString *)syntax;
++ (NSString *)ASMStringForHexadecimalString:(NSString *)hexaString architecture:(NSString *)architecture syntax:(NSString *)syntax;
 
 @end

@@ -1,7 +1,7 @@
 /*
  *  MainController.m
  *
- *  Copyright 2014 Avérous Julien-Pierre
+ *  Copyright 2017 Avérous Julien-Pierre
  *
  *  This file is part of AsmHelper.
  *
@@ -32,11 +32,14 @@
 
 @interface MainController ()
 
-@property (weak, nonatomic) IBOutlet NSPopUpButton	*asmToHexaArch;
+@property (weak, nonatomic) IBOutlet NSWindow *window;
+
+@property (weak, nonatomic) IBOutlet NSPopUpButton	*architectures;
+@property (weak, nonatomic) IBOutlet NSPopUpButton	*syntaxes;
+
 @property (weak, nonatomic) IBOutlet NSTextField	*asmToHexaInput;
 @property (weak, nonatomic) IBOutlet NSTextField	*asmToHexaOutput;
 
-@property (weak, nonatomic) IBOutlet NSPopUpButton	*hexaToAsmArch;
 @property (weak, nonatomic) IBOutlet NSTextField	*hexaToAsmInput;
 @property (weak, nonatomic) IBOutlet NSTextField	*hexaToAsmOutput;
 
@@ -62,22 +65,29 @@
 
 - (void)awakeFromNib
 {
+	// Center.
+	[_window center];
+	
 	// Build architecture list.
 	NSArray *architectures = [AHTool architectures];
 	
 	for (NSString *architecture in architectures)
-	{
-		[_asmToHexaArch addItemWithTitle:architecture];
-		[_hexaToAsmArch addItemWithTitle:architecture];
-	}
+		[_architectures addItemWithTitle:architecture];
+	
+	// Build syntax list.
+	NSArray *syntaxes = [AHTool syntaxes];
+	
+	for (NSString *syntax in syntaxes)
+		[_syntaxes addItemWithTitle:syntax];
 
 	// Preferences.
 	NSUserDefaults *pref = [NSUserDefaults standardUserDefaults];
 	
-	[_asmToHexaArch selectItemWithTitle:([pref objectForKey:@"a2h_arch"] ?: @"i386")];
+	[_architectures selectItemWithTitle:([pref objectForKey:@"architecture"] ?: @"x86_64")];
+	[_syntaxes selectItemWithTitle:([pref objectForKey:@"syntax"] ?: @"at&t")];
+
 	[_asmToHexaInput setStringValue:([pref objectForKey:@"a2h_in"] ?: @"")];
 	[_asmToHexaOutput setStringValue:([pref objectForKey:@"a2h_out"] ?: @"-")];
-	[_hexaToAsmArch selectItemWithTitle:([pref objectForKey:@"h2a_arch"] ?: @"i386")];
 	[_hexaToAsmInput setStringValue:([pref objectForKey:@"h2a_in"] ?: @"")];
 	[_hexaToAsmOutput setStringValue:([pref objectForKey:@"h2a_out"] ?: @"-")];
 }
@@ -87,10 +97,11 @@
 {
 	NSUserDefaults *pref = [NSUserDefaults standardUserDefaults];
 	
-	[pref setObject:[_asmToHexaArch titleOfSelectedItem] forKey:@"a2h_arch"];
+	[pref setObject:[_architectures titleOfSelectedItem] forKey:@"architecture"];
+	[pref setObject:[_syntaxes titleOfSelectedItem] forKey:@"syntax"];
+
 	[pref setObject:[_asmToHexaInput stringValue] forKey:@"a2h_in"];
 	[pref setObject:[_asmToHexaOutput stringValue] forKey:@"a2h_out"];
-	[pref setObject:[_hexaToAsmArch titleOfSelectedItem] forKey:@"h2a_arch"];
 	[pref setObject:[_hexaToAsmInput stringValue] forKey:@"h2a_in"];
 	[pref setObject:[_hexaToAsmOutput stringValue] forKey:@"h2a_out"];
 }
@@ -104,7 +115,7 @@
 
 - (IBAction)convertASMToHexa:(id)sender
 {
-	NSString *result = [AHTool hexadecimalStringForASMString:_asmToHexaInput.stringValue withArchitecture:_asmToHexaArch.titleOfSelectedItem];
+	NSString *result = [AHTool hexadecimalStringForASMString:_asmToHexaInput.stringValue architecture:_architectures.titleOfSelectedItem syntax:_syntaxes.titleOfSelectedItem];
 	
 	if (!result)
 	{
@@ -117,7 +128,7 @@
 
 - (IBAction)convertHexaToASM:(id)sender
 {
-	NSString *result = [AHTool ASMStringForHexadecimalString:_hexaToAsmInput.stringValue withArchitecture:_hexaToAsmArch.titleOfSelectedItem];
+	NSString *result = [AHTool ASMStringForHexadecimalString:_hexaToAsmInput.stringValue architecture:_architectures.titleOfSelectedItem syntax:_syntaxes.titleOfSelectedItem];
 	
 	if (!result)
 	{
