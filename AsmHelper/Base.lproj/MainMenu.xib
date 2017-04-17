@@ -98,7 +98,7 @@
                         </textFieldCell>
                     </textField>
                     <textField horizontalHuggingPriority="751" verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RZk-Lo-iwl">
-                        <rect key="frame" x="31" y="55" width="63" height="17"/>
+                        <rect key="frame" x="36" y="55" width="63" height="17"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="Assemble" id="ckG-YL-JOa">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -136,7 +136,7 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="208" firstAttribute="top" secondItem="Bgn-uH-LCX" secondAttribute="bottom" constant="20" id="1cf-fV-3by"/>
-                    <constraint firstItem="208" firstAttribute="leading" secondItem="RZk-Lo-iwl" secondAttribute="trailing" constant="13" id="46Z-Uj-aRx"/>
+                    <constraint firstItem="208" firstAttribute="leading" secondItem="RZk-Lo-iwl" secondAttribute="trailing" constant="8" symbolic="YES" id="46Z-Uj-aRx"/>
                     <constraint firstItem="5hL-72-1si" firstAttribute="leading" secondItem="2" secondAttribute="leading" priority="750" id="7TI-uc-gbz"/>
                     <constraint firstItem="3s1-iN-BmB" firstAttribute="leading" secondItem="208" secondAttribute="trailing" constant="8" symbolic="YES" id="9eg-G2-cmV"/>
                     <constraint firstItem="xal-H3-Asc" firstAttribute="top" secondItem="2" secondAttribute="top" constant="20" symbolic="YES" id="Ag1-xY-2uP"/>
