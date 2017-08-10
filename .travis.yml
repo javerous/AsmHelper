@@ -2,3 +2,6 @@ language: objective-c
 xcode_project: AsmHelper.xcodeproj
 xcode_scheme: AsmHelper
 osx_image: xcode8.3
+
+script:
+    - xcodebuild clean build -project AsmHelper.xcodeproj -scheme AsmHelper CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
