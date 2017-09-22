@@ -293,7 +293,7 @@ static inline uint8_t hexa_value(uint8_t value)
 	else if (value >= 'A' && value <= 'F')
 		return 10 + (value - 'A');
 	else if (value >= 'a' && value <= 'f')
-		return (value - 'a');
+		return 10 + (value - 'a');
 	else
 		return value;
 }

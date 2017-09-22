@@ -31,15 +31,21 @@
 #pragma mark - MainController
 
 @interface MainController ()
+{
+	BOOL _continuousAsmToHexa;
+	BOOL _continuousHexaToAsm;
+}
 
 @property (weak, nonatomic) IBOutlet NSWindow *window;
 
 @property (weak, nonatomic) IBOutlet NSPopUpButton	*architectures;
 @property (weak, nonatomic) IBOutlet NSPopUpButton	*syntaxes;
 
+@property (weak, nonatomic) IBOutlet NSButton 		*asmToHexaButton;
 @property (weak, nonatomic) IBOutlet NSTextField	*asmToHexaInput;
 @property (weak, nonatomic) IBOutlet NSTextField	*asmToHexaOutput;
 
+@property (weak, nonatomic) IBOutlet NSButton		*hexaToAsmButton;
 @property (weak, nonatomic) IBOutlet NSTextField	*hexaToAsmInput;
 @property (weak, nonatomic) IBOutlet NSTextField	*hexaToAsmOutput;
 
@@ -90,6 +96,21 @@
 	[_asmToHexaOutput setStringValue:([pref objectForKey:@"a2h_out"] ?: @"-")];
 	[_hexaToAsmInput setStringValue:([pref objectForKey:@"h2a_in"] ?: @"")];
 	[_hexaToAsmOutput setStringValue:([pref objectForKey:@"h2a_out"] ?: @"-")];
+	
+	_continuousAsmToHexa = [[pref objectForKey:@"continuousAsmToHexa"] boolValue];
+	_continuousHexaToAsm = [[pref objectForKey:@"continuousHexaToAsm"] boolValue];
+
+	if (_continuousAsmToHexa)
+	{
+		_asmToHexaButton.buttonType = NSButtonTypePushOnPushOff;
+		_asmToHexaButton.state = NSControlStateValueOn;
+	}
+	
+	if (_continuousHexaToAsm)
+	{
+		_hexaToAsmButton.buttonType = NSButtonTypePushOnPushOff;
+		_hexaToAsmButton.state = NSControlStateValueOn;
+	}
 }
 
 
@@ -115,28 +136,105 @@
 
 - (IBAction)convertASMToHexa:(id)sender
 {
-	NSString *result = [AHTool hexadecimalStringForASMString:_asmToHexaInput.stringValue architecture:_architectures.titleOfSelectedItem syntax:_syntaxes.titleOfSelectedItem];
-	
-	if (!result)
-	{
-		NSBeep();
-		result = @"-";
-	}
-	
-	_asmToHexaOutput.stringValue = result;
+	// Handle toggle.
+	[self handleToogleForButton:sender prefName:@"continuousAsmToHexa" boolValue:&_continuousAsmToHexa];
+
+	// Convert.
+	[self convertASMToHexa];
 }
 
 - (IBAction)convertHexaToASM:(id)sender
 {
+	// Handle toggle.
+	[self handleToogleForButton:sender prefName:@"continuousHexaToAsm" boolValue:&_continuousHexaToAsm];
+	
+	// Convert.
+	[self convertHexaToASM];
+}
+
+
+
+/*
+** MainController - NSControl
+*/
+#pragma mark - MainController - NSControl
+
+- (void)controlTextDidChange:(NSNotification *)obj
+{
+	NSTextField *changedField = obj.object;
+	
+	if (changedField == _asmToHexaInput)
+	{
+		if (_continuousAsmToHexa)
+			[self convertASMToHexa];
+	}
+	else if (changedField == _hexaToAsmInput)
+	{
+		if (_continuousHexaToAsm)
+			[self convertHexaToASM];
+	}
+}
+
+
+
+/*
+** MainController - Helpers
+*/
+#pragma mark - MainController - Helpers
+
+- (void)handleToogleForButton:(NSButton *)button prefName:(NSString *)prefName boolValue:(BOOL *)boolValue
+{
+	if (NSApplication.sharedApplication.currentEvent.modifierFlags & NSAlternateKeyMask)
+	{
+		*boolValue = ! *boolValue;
+		
+		if (*boolValue)
+		{
+			button.buttonType = NSButtonTypePushOnPushOff;
+			button.state = NSControlStateValueOn;
+		}
+		else
+		{
+			button.buttonType = NSButtonTypeMomentaryPushIn;
+			button.state = NSControlStateValueOff;
+		}
+		
+		[[NSUserDefaults standardUserDefaults] setBool:*boolValue forKey:prefName];
+	}
+	else
+	{
+		if (*boolValue)
+		{
+			*boolValue = NO;
+			
+			button.buttonType = NSButtonTypeMomentaryPushIn;
+			button.state = NSControlStateValueOff;
+			
+			[[NSUserDefaults standardUserDefaults] setBool:*boolValue forKey:prefName];
+		}
+	}
+}
+
+- (void)convertASMToHexa
+{
+	NSString *result = [AHTool hexadecimalStringForASMString:_asmToHexaInput.stringValue architecture:_architectures.titleOfSelectedItem syntax:_syntaxes.titleOfSelectedItem];
+	
+	if (!result)
+		result = @"-";
+	
+	_asmToHexaOutput.stringValue = result;
+}
+
+- (void)convertHexaToASM
+{
 	NSString *result = [AHTool ASMStringForHexadecimalString:_hexaToAsmInput.stringValue architecture:_architectures.titleOfSelectedItem syntax:_syntaxes.titleOfSelectedItem];
 	
 	if (!result)
-	{
-		NSBeep();
 		result = @"-";
-	}
 	
 	_hexaToAsmOutput.stringValue = result;
 }
+
+
 
 @end
