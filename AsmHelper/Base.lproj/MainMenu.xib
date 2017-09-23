@@ -29,6 +29,9 @@
                             <font key="font" metaFont="menu"/>
                             <menu key="menu" title="OtherViews" id="211"/>
                         </popUpButtonCell>
+                        <connections>
+                            <action selector="changeArchitecture:" target="206" id="ipM-Mf-tD2"/>
+                        </connections>
                     </popUpButton>
                     <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="SXo-Du-G1v">
                         <rect key="frame" x="158" y="117" width="46" height="17"/>
@@ -45,6 +48,9 @@
                             <font key="font" metaFont="menu"/>
                             <menu key="menu" title="OtherViews" id="5bt-kT-ow5"/>
                         </popUpButtonCell>
+                        <connections>
+                            <action selector="changeSyntax:" target="206" id="lu7-TG-pj0"/>
+                        </connections>
                     </popUpButton>
                     <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="208">
                         <rect key="frame" x="105" y="52" width="200" height="22"/>

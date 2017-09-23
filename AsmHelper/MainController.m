@@ -152,6 +152,24 @@
 	[self convertHexaToASM];
 }
 
+- (IBAction)changeArchitecture:(id)sender
+{
+	if (_continuousAsmToHexa)
+		[self convertASMToHexa];
+
+	if (_continuousHexaToAsm)
+		[self convertHexaToASM];
+}
+
+- (IBAction)changeSyntax:(id)sender
+{
+	if (_continuousAsmToHexa)
+		[self convertASMToHexa];
+	
+	if (_continuousHexaToAsm)
+		[self convertHexaToASM];
+}
+
 
 
 /*
