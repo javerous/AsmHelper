@@ -1,7 +1,7 @@
 /*
  *  MainController.m
  *
- *  Copyright 2017 Avérous Julien-Pierre
+ *  Copyright 2018 Avérous Julien-Pierre
  *
  *  This file is part of AsmHelper.
  *
@@ -202,7 +202,7 @@
 
 - (void)handleToogleForButton:(NSButton *)button prefName:(NSString *)prefName boolValue:(BOOL *)boolValue
 {
-	if (NSApplication.sharedApplication.currentEvent.modifierFlags & NSAlternateKeyMask)
+	if (NSApplication.sharedApplication.currentEvent.modifierFlags & NSEventModifierFlagOption)
 	{
 		*boolValue = ! *boolValue;
 		
