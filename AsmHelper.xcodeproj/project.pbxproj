@@ -158,6 +158,7 @@
 		E8237D7B1F75E6FB00012064 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		E83AD7D018C2BD71000B6C96 /* AHTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHTool.h; sourceTree = "<group>"; };
 		E83AD7D118C2BD71000B6C96 /* AHTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHTool.m; sourceTree = "<group>"; };
+		E844F498218B957600472B07 /* AsmHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AsmHelper.entitlements; sourceTree = "<group>"; };
 		E8538AB21EA0F53D00F6D401 /* Capstone.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Capstone.xcodeproj; path = Submodules/capstone/xcode/Capstone.xcodeproj; sourceTree = "<group>"; };
 		E887CA7918C3A5410078BE83 /* AHCleaner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHCleaner.h; sourceTree = "<group>"; };
 		E887CA7A18C3A5410078BE83 /* AHCleaner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHCleaner.m; sourceTree = "<group>"; };
@@ -245,6 +246,7 @@
 		E8131F811EA1730C00297A90 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E844F498218B957600472B07 /* AsmHelper.entitlements */,
 				E8131F841EA1737F00297A90 /* MainMenu.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				E8237D7B1F75E6FB00012064 /* Credits.rtf */,
@@ -318,7 +320,13 @@
 				ORGANIZATIONNAME = SourceMac;
 				TargetAttributes = {
 					8D1107260486CEB800E47090 = {
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = 4656ESDGU8;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HardenedRuntime = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -538,7 +546,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4656ESDGU8;
+				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = (
 					"${PROJECT_DIR}/Submodules/capstone/include/",
 					"${PROJECT_DIR}/Submodules/keystone/include/keystone/",
@@ -547,6 +559,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sourcemac.asmhelper;
 				PRODUCT_NAME = AsmHelper;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -555,7 +568,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 4656ESDGU8;
+				ENABLE_HARDENED_RUNTIME = YES;
 				HEADER_SEARCH_PATHS = (
 					"${PROJECT_DIR}/Submodules/capstone/include/",
 					"${PROJECT_DIR}/Submodules/keystone/include/keystone/",
@@ -564,6 +581,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sourcemac.asmhelper;
 				PRODUCT_NAME = AsmHelper;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
