@@ -84,14 +84,15 @@ static NSData * data_from_hexa(NSString *hexadecimal);
 	
 	dispatch_once(&onceToken, ^{
 		architectures = @{
-			@"i386"		: @{ kOrder : @0,	kAssemblerArch : @(KS_ARCH_X86), kAssemblerMode : @(KS_MODE_32),	kDisasemblerArch : @(CS_ARCH_X86), kDisasemblerMode : @(CS_MODE_32) },
-			@"x86_64"	: @{ kOrder : @1,	kAssemblerArch : @(KS_ARCH_X86), kAssemblerMode : @(KS_MODE_64),	kDisasemblerArch : @(CS_ARCH_X86), kDisasemblerMode : @(CS_MODE_64) },
+			@"i386"		: @{ kOrder : @0,	kAssemblerArch : @(KS_ARCH_X86), 	kAssemblerMode : @(KS_MODE_32),		kDisasemblerArch : @(CS_ARCH_X86), 		kDisasemblerMode : @(CS_MODE_32) },
+			@"x86_64"	: @{ kOrder : @1,	kAssemblerArch : @(KS_ARCH_X86), 	kAssemblerMode : @(KS_MODE_64),		kDisasemblerArch : @(CS_ARCH_X86), 		kDisasemblerMode : @(CS_MODE_64) },
 			
-			@"arm"		: @{ kOrder : @2,	kAssemblerArch : @(KS_ARCH_ARM), kAssemblerMode : @(KS_MODE_ARM),	kDisasemblerArch : @(CS_ARCH_ARM), kDisasemblerMode : @(CS_MODE_ARM) },
-			@"arm-thumb": @{ kOrder : @3,	kAssemblerArch : @(KS_ARCH_ARM), kAssemblerMode : @(KS_MODE_THUMB),	kDisasemblerArch : @(CS_ARCH_ARM), kDisasemblerMode : @(CS_MODE_THUMB) },
-			
-			@"ppc"		: @{ kOrder : @4,	kAssemblerArch : @(KS_ARCH_PPC), kAssemblerMode : @(0),				kDisasemblerArch : @(CS_ARCH_PPC), kDisasemblerMode : @(0) },
-			@"ppc64"	: @{ kOrder : @5,	kAssemblerArch : @(KS_ARCH_PPC), kAssemblerMode : @(KS_MODE_64),	kDisasemblerArch : @(CS_ARCH_PPC), kDisasemblerMode : @(CS_MODE_64) },
+			@"arm"		: @{ kOrder : @2,	kAssemblerArch : @(KS_ARCH_ARM),	kAssemblerMode : @(KS_MODE_ARM),	kDisasemblerArch : @(CS_ARCH_ARM), 		kDisasemblerMode : @(CS_MODE_ARM) },
+			@"arm-thumb": @{ kOrder : @3,	kAssemblerArch : @(KS_ARCH_ARM),	kAssemblerMode : @(KS_MODE_THUMB),	kDisasemblerArch : @(CS_ARCH_ARM), 		kDisasemblerMode : @(CS_MODE_THUMB) },
+			@"arm-64"	: @{ kOrder : @4,	kAssemblerArch : @(KS_ARCH_ARM64), 	kAssemblerMode : @(0),				kDisasemblerArch : @(CS_ARCH_ARM64),	kDisasemblerMode : @(0) },
+
+			@"ppc"		: @{ kOrder : @5,	kAssemblerArch : @(KS_ARCH_PPC), 	kAssemblerMode : @(0),				kDisasemblerArch : @(CS_ARCH_PPC), 		kDisasemblerMode : @(0) },
+			@"ppc64"	: @{ kOrder : @6,	kAssemblerArch : @(KS_ARCH_PPC), 	kAssemblerMode : @(KS_MODE_64),		kDisasemblerArch : @(CS_ARCH_PPC), 		kDisasemblerMode : @(CS_MODE_64) },
 		};
 	});
 
@@ -199,9 +200,14 @@ static NSData * data_from_hexa(NSString *hexadecimal);
 	uint8_t *insn = NULL;
 	size_t	count;
 	size_t	size;
+	
+	error = ks_asm(handle, asmString.UTF8String, 0, &insn, &size, &count);
 
-	if (ks_asm(handle, asmString.UTF8String, 0, &insn, &size, &count) != 0)
+	if (error != 0)
+	{
+		NSLog(@"ks_asm error: %d", error);
 		return nil;
+	}
 	
 	if (count == 0 || size == 0 || insn == NULL)
 		return nil;
