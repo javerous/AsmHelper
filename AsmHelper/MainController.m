@@ -30,7 +30,7 @@
 */
 #pragma mark - MainController
 
-@interface MainController ()
+@interface MainController () <NSControlTextEditingDelegate>
 {
 	BOOL _continuousAsmToHexa;
 	BOOL _continuousHexaToAsm;

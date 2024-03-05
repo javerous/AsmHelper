@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -133,6 +133,20 @@
 			remoteGlobalIDString = DCFE23BC19DDCC2D00EF8EA9;
 			remoteInfo = CapstoneStatic;
 		};
+		E8C211DA2B97DE6D0014F949 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8538AB21EA0F53D00F6D401 /* Capstone.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC3A28DB1AF29BEB00FC9913;
+			remoteInfo = test_customized_mnem;
+		};
+		E8C211DC2B97DE6D0014F949 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8538AB21EA0F53D00F6D401 /* Capstone.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCA357961BC2C0930094BB3F;
+			remoteInfo = test_m68k;
+		};
 		E8D83C3C1EA11BEA007A5FB2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E8D83C381EA11BEA007A5FB2 /* keystone.xcodeproj */;
@@ -152,7 +166,6 @@
 /* Begin PBXFileReference section */
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* AsmHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsmHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8131F851EA1737F00297A90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		E8237D7B1F75E6FB00012064 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
@@ -248,7 +261,6 @@
 			children = (
 				E844F498218B957600472B07 /* AsmHelper.entitlements */,
 				E8131F841EA1737F00297A90 /* MainMenu.xib */,
-				8D1107310486CEB800E47090 /* Info.plist */,
 				E8237D7B1F75E6FB00012064 /* Credits.rtf */,
 				E8B7C70F1EA3EDBF0059F5A1 /* Images.xcassets */,
 			);
@@ -261,11 +273,13 @@
 				E8538AC51EA0F53E00F6D401 /* libcapstone.a */,
 				E8538AC71EA0F53E00F6D401 /* libcapstone.dylib */,
 				E8538AC91EA0F53E00F6D401 /* Capstone.framework */,
-				E8538ACB1EA0F53E00F6D401 /* test */,
+				E8538ACB1EA0F53E00F6D401 /* test_basic */,
 				E8538ACD1EA0F53E00F6D401 /* test_arm */,
 				E8538ACF1EA0F53E00F6D401 /* test_arm64 */,
+				E8C211DB2B97DE6D0014F949 /* test_customized_mnem */,
 				E8538AD11EA0F53E00F6D401 /* test_detail */,
 				E8538AD31EA0F53E00F6D401 /* test_iter */,
+				E8C211DD2B97DE6D0014F949 /* test_m68k */,
 				E8538AD51EA0F53E00F6D401 /* test_mips */,
 				E8538AD71EA0F53E00F6D401 /* test_ppc */,
 				E8538AD91EA0F53E00F6D401 /* test_skipdata */,
@@ -315,8 +329,9 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				CLASSPREFIX = AH;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1530;
 				ORGANIZATIONNAME = SourceMac;
 				TargetAttributes = {
 					8D1107260486CEB800E47090 = {
@@ -332,11 +347,11 @@
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "AsmHelper" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
-				English,
 				Base,
+				en,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA;
 			projectDirPath = "";
@@ -379,10 +394,9 @@
 			remoteRef = E8538AC81EA0F53E00F6D401 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		E8538ACB1EA0F53E00F6D401 /* test */ = {
+		E8538ACB1EA0F53E00F6D401 /* test_basic */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
-			name = test;
 			path = test_basic;
 			remoteRef = E8538ACA1EA0F53E00F6D401 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -464,6 +478,20 @@
 			remoteRef = E8538AE01EA0F53E00F6D401 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		E8C211DB2B97DE6D0014F949 /* test_customized_mnem */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = test_customized_mnem;
+			remoteRef = E8C211DA2B97DE6D0014F949 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E8C211DD2B97DE6D0014F949 /* test_m68k */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = test_m68k;
+			remoteRef = E8C211DC2B97DE6D0014F949 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		E8D83C3D1EA11BEA007A5FB2 /* libkeystone.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -489,6 +517,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		E81937BF1F754C8000FEAD23 /* Set CFBundleVersion */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -549,14 +578,24 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 4656ESDGU8;
 				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
-					"${PROJECT_DIR}/Submodules/capstone/include/",
+					"${PROJECT_DIR}/Submodules/capstone/include/capstone/",
 					"${PROJECT_DIR}/Submodules/keystone/include/keystone/",
 				);
-				INFOPLIST_FILE = AsmHelper/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2017-2024 Julien-Pierre Avérous. All rights reserved.";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.9;
+				OTHER_CFLAGS = "-Wno-shorten-64-to-32";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sourcemac.asmhelper;
 				PRODUCT_NAME = AsmHelper;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -571,14 +610,24 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 4656ESDGU8;
 				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
 				HEADER_SEARCH_PATHS = (
-					"${PROJECT_DIR}/Submodules/capstone/include/",
+					"${PROJECT_DIR}/Submodules/capstone/include/capstone/",
 					"${PROJECT_DIR}/Submodules/keystone/include/keystone/",
 				);
-				INFOPLIST_FILE = AsmHelper/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2017-2024 Julien-Pierre Avérous. All rights reserved.";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.9;
+				OTHER_CFLAGS = "-Wno-shorten-64-to-32";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sourcemac.asmhelper;
 				PRODUCT_NAME = AsmHelper;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -594,7 +643,7 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -602,7 +651,7 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -610,12 +659,14 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -634,7 +685,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -648,7 +699,7 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_MODULES = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -656,7 +707,7 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -664,12 +715,14 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -683,7 +736,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				SDKROOT = macosx;
 			};
 			name = Release;
