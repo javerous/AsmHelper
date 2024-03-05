@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -531,13 +531,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1530;
 			};
 			buildConfigurationList = ACCA28934B8D4555AB3D5082 /* Build configuration list for PBXProject "keystone" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 650253EB05A5432DB09F8DF4;
 			projectDirPath = "";
@@ -711,7 +713,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -757,6 +759,7 @@
 					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/X86",
 				);
 				LIBRARY_STYLE = STATIC;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
 					"-Wall",
@@ -769,6 +772,8 @@
 					"-Wcovered-switch-default",
 					"-Wdelete-non-virtual-dtor",
 					"-DNDEBUG",
+					"-Wno-unused-private-field",
+					"-Wno-unused-but-set-variable",
 				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"-fvisibility-inlines-hidden",
@@ -785,6 +790,8 @@
 					"-Wdelete-non-virtual-dtor",
 					"-std=c++11",
 					"-DNDEBUG",
+					"-Wno-unused-private-field",
+					"-Wno-unused-but-set-variable",
 				);
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
@@ -840,6 +847,7 @@
 					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/X86",
 				);
 				LIBRARY_STYLE = STATIC;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
 					"-Wall",
@@ -852,6 +860,8 @@
 					"-Wcovered-switch-default",
 					"-Wdelete-non-virtual-dtor",
 					"-DNDEBUG",
+					"-Wno-unused-private-field",
+					"-Wno-unused-but-set-variable",
 				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"-fvisibility-inlines-hidden",
@@ -868,6 +878,8 @@
 					"-Wdelete-non-virtual-dtor",
 					"-std=c++11",
 					"-DNDEBUG",
+					"-Wno-unused-private-field",
+					"-Wno-unused-but-set-variable",
 				);
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
@@ -923,6 +935,7 @@
 					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/X86",
 				);
 				LIBRARY_STYLE = STATIC;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
 					"-Wall",
@@ -934,6 +947,8 @@
 					"-Wno-long-long",
 					"-Wcovered-switch-default",
 					"-Wdelete-non-virtual-dtor",
+					"-Wno-unused-private-field",
+					"-Wno-unused-but-set-variable",
 				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"-fvisibility-inlines-hidden",
@@ -949,6 +964,8 @@
 					"-Wnon-virtual-dtor",
 					"-Wdelete-non-virtual-dtor",
 					"-std=c++11",
+					"-Wno-unused-private-field",
+					"-Wno-unused-but-set-variable",
 				);
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
@@ -968,7 +985,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -1014,6 +1031,7 @@
 					"${PROJECT_DIR}/../../Submodules/keystone/llvm/keystone/../lib/Target/X86",
 				);
 				LIBRARY_STYLE = STATIC;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_CFLAGS = (
 					"-Wall",
@@ -1026,6 +1044,8 @@
 					"-Wcovered-switch-default",
 					"-Wdelete-non-virtual-dtor",
 					"-DNDEBUG",
+					"-Wno-unused-private-field",
+					"-Wno-unused-but-set-variable",
 				);
 				OTHER_CPLUSPLUSFLAGS = (
 					"-fvisibility-inlines-hidden",
@@ -1042,6 +1062,8 @@
 					"-Wdelete-non-virtual-dtor",
 					"-std=c++11",
 					"-DNDEBUG",
+					"-Wno-unused-private-field",
+					"-Wno-unused-but-set-variable",
 				);
 				OTHER_LIBTOOLFLAGS = " ";
 				OTHER_REZFLAGS = "";
@@ -1061,7 +1083,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
@@ -1071,7 +1093,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 			};
